@@ -1,7 +1,11 @@
-#nav_menu ul {
-    list-style-type: none;
-    padding: 10px;              /*all four sides */
+#nav_menu ul {list-style-type: none; }
+#nav_menu ul li {float: left; }
+#nav-menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;              /*all four sides */
     margin: 20px;               /*all four sides */
-    border-top: 1px dashed black;
-    border-bottom: 1px dashed black;
-}
+    border-top: 1px solid; color: brown;
+    border-bottom: 1px solid; color: brown;
+} 
