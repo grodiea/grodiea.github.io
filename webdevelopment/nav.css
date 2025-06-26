@@ -1,11 +1,24 @@
-#nav_menu ul {list-style-type: none; }
-#nav_menu ul li {float: left; }
-#nav-menu ul li a {
+#nav_menu ul {
+    list-style-type: none; 
+    position: relative; }
+#nav_menu ul li { float: left; }
+#nav_menu ul li a {
     text-align: center;
     display: block;
     width: 175px;
-    padding: 1em 0;              /*all four sides */
-    margin: 20px;               /*all four sides */
-    border-top: 1px solid; color: brown;
-    border-bottom: 1px solid; color: brown;
-} 
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #e1a730;
+    color: #150f61
+}
+#nav-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li:hover > ul {
+    display: block; }
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both; }
