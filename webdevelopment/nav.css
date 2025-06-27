@@ -1,23 +1,45 @@
 #nav_menu ul {list-style-type: none; position:relative;}
-#nav_menu ul li { float: left;}
+#nav_menu ul li { float: left; text-decoration: none;}
 #nav_menu ul li a {
   text-align: center;
   display: block;
-  width: 175px;
-  padding: 1em 0;
-  text-decoration: none;
+  width: 125px;
+  padding: 5px;
+  font-size: 100%;
   background-color: #e1a730;
-  color: #150f61;
-  font-weight: bold;}
-#nav_menu ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-#nav_menu ul ul li {float:none; }
-#nav_menu ul li:hover > ul {
-  display:block; }
+  color: #f7f7f7;
+  font-weight: bold;
+  position: relative;
+  margin: 5px;
+  text-decoration: none;
 }
-#nav_menu ul li a.lastitem { border-right:none; }
+ul {
+  overflow:hidden;
+  padding: 5px;
+  width: 500px;
+  background-color: #e1a730;
+}
+li {
+  float: left;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: medium;
+  position: relative;
+  display: block;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+#nav_menu a:hover {
+  padding: 7px;
+  margin: .5px;
+  text-align: center;
+  font-size: 125%;
+  width: 130px;
+  vertical-align: middle;
+}
+#nav_menu ul li a.lastitem { border-right: none; }
 #nav_menu > ul::after {
   content: "";
   clear: both;
