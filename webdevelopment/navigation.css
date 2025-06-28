@@ -22,7 +22,7 @@
     clear:both;
     display:block;}
 #nav_menu a:hover {
-    padding: 1opx;
+    padding: 10px;
     margin: .5px;
     text-align: center;
     font-size: 125%;
