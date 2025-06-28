@@ -1,6 +1,6 @@
 #nav_menu ul {
-        list-style-type: none;
-        position:relative; }
+    list-style-type: none;
+    position:relative; }
 #nav_menu ul li {float:left;}
 #nav_menu ul ul {
     display: none;
@@ -22,16 +22,11 @@
     clear:both;
     display:block;}
 #nav_menu a:hover {
-    padding: 11px;
+    padding: 1opx;
     margin: .5px;
     text-align: center;
     font-size: 125%;
-    width: 130px;
-    border: solid;
-    border-width: medium;
-    position: relative;
-    display: block;
-    color: #150f61;}
+    width: 130px;}
 #nav_menu ul li a {
     float:left;
     text-align: center;
@@ -57,3 +52,7 @@
     color: #f7f7f7; }
 #nav_menu ul li a:hover, #hav_menu ul li a:focus {
 background-color: #39793d;}
+#nav_menu > ul::after {
+    content:"";
+    clear:both;
+    display:block;}
