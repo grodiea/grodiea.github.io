@@ -1,1 +1,39 @@
-h1 {color: #39793d;}
+h1 {color: #397760;
+    font-family:Garamond, serif;
+    font-weight:bolder;}
+p {font-size: 125%;}
+body {color:
+    #150f61;}
+body {    
+    font-family:Garamond, serif;
+    margin: 40px;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    border-style:none;}
+img {
+  border: 6px solid #150f61;
+  border-style: solid;
+  padding: 5px;
+  width: 150px;}
+.intro p::first-letter {
+font-size: 140%;
+font-family: "Sofia", sans-serif;}
+.intro {color:#39793d;}
+.intro2 {text-indent: 2%;
+color:#39793d;}
+.footer {color: #e1a730;}
+
+/*work on footer features
+
+.footer {
+    font-style:normal;
+    font-size: small;
+    background-color: #e1a730;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid; color: #150f61;
+    border-top-width:5px;
+    border-bottom-width: 5px;
+    border-left-width:0;
+    border-right-width:0; */
