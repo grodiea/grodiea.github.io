@@ -38,11 +38,11 @@
     margin: 2px;
     text-decoration:none;
     background-color: #e1a730;
-    color: #f7f7f7;
     border-style: solid; color:#150f61;
     border-width: thick;
     font-family: garamond, serif;
     font-weight: bold;
+    color-scheme: #f7f7f7;
 }
 #nav_menu ul li.lastitem a { /*unsure*/
     width:176px; }
