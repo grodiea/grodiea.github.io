@@ -42,7 +42,7 @@
     border-width: thick;
     font-family: garamond, serif;
     font-weight: bold;
-    color-scheme: #f7f7f7;
+    color: #f7f7f7;
 }
 #nav_menu ul li.lastitem a { /*unsure*/
     width:176px; }
