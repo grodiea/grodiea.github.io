@@ -24,9 +24,9 @@ li {
   border-bottom: solid;
   border-top: solid;
   border-width: medium;
+  border-color: #150F61;
   position: relative;
   display: block;
-  color: #f7f7f7;
   text-align: center;
   padding: 10px;
   text-decoration: none;
