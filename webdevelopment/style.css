@@ -10,7 +10,7 @@ h2 {color: #39793d;
     font-weight:bold;}
 
 #intro {
-  text-align: left;   
+  text-align: center;   
   margin: 0 auto;           
   max-width: 600px; 
   margin-left: auto;    
@@ -50,6 +50,9 @@ a:active {
         font-family:Garamond, serif;
         border-style: solid; border-color:#150f61; border-width: 6px;
         }
+#form {
+   float:right;
+    margin: 0;}
 img {
         border: 6px solid #150f61;
         border-style: solid;
@@ -60,20 +63,21 @@ img {
     flex-direction:row;
     width: 90%;
     height:90%;
-    justify-content: left;
-    align-items: left;
+    justify-content:left;
 }
 
 .flex-container > div {
     background-color: #39793d;
-    width: 40%;
-    margin: 10px;
+    width: auto;
+    margin: 4px;
     text-align:center;
     line-height: 75px;
     font-size: 30px;
 }
 video {
-    display:flex;
+    align-items: center;
+    position:relative;
+    width: 55%;
 }
 footer {color: #e1a730;
     background-color: #150f61;
@@ -84,5 +88,6 @@ footer {color: #e1a730;
     width: 100%;
     padding: 5px;
     text-align: center;}
+
 
     
