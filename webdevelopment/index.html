@@ -4,48 +4,56 @@ Use:  Home page for the farm website
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.-->
+Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <title>Home</title>
+              <link rel="stylesheet" href="navigation.css">
+              <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .intro p::first-letter {
-font-size: 140%;
-font-family: "Sofia", sans-serif;}
-.intro {color:#39793d;}
-.intro2 {text-indent: 2%;
-color:#39793d;
-}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#150f61; padding:10px;
+    font-family: Garamond, serif; text-align: center; font-size: 100%;
+    padding-left: 2px;}
+    
+a:hover {text-decoration: none; text-align: center;
+    color:#150f61; font-weight: bolder;
+    align-items: center;
+    font-family: Garamond, serif;font-size: 100%;}
 </style>
 <main>
-<link rel="stylesheet" href="navigation.css">
-<link rel="stylesheet" href="style.css">
-    <nav id="nav_menu">  
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="reflection.html">Reflection</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="lastitem"><a href="#projects.html">Projects</a>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
-        </li>
-        </ul>
-    </nav>
+<nav>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="hamburger">&#9776;</label>
+
+  <ul class="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="#projects.html">Projects</a>
+      <ul class="mobileHide">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+    <li><a href="reflection.html">Reflection</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
     </main>
         <h1>Home Page</h1>
-            <img src="indexmain.jpg" alt="familyphoto" style="width: 700px;">
-        <h3>M&C Grodie Farms</h3>
+        <h2>M&C Grodie Farms</h2>
+            <img src="homepage.jpg" alt="field of grass">
+        
         <p>M&C Grodie Farms is a family run farm in Dittmer, Missouri since 2012.</p>
-    <header>
+   
         <p>Growing up blocks a part, in the suburbs of St. Louis County their paths rarely crossed; not until a chance encounter Courtney’ senior year of high school. During the reception of a mutual friend’s wedding, Matt asked Courtney to dance. Five years later they were married, and they scoured the surrounding areas for land to start a farm. Visiting a near perfect property in Dittmer left them with the realty of farm ownership. Spanning over 150 acres, Lone Elm Farm is surrounded by forests, creeks, and a beautiful, white home built with the hands of its dedicated owners. Matt and Courtney could see their future before their eyes. 
         Archiving the success of MC Grodie Farms will not only benefit communicating their story, but it will also document its journey for their future generations of farmers.</p>
-    </header>
     <footer>
         <p>Amanda Grodie; Grodiea@umkc.edu &copy; Copyright 2025</p>
     </footer>

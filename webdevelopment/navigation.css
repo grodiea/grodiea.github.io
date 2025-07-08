@@ -13,7 +13,7 @@ nav {
 
     #hamburger {
       display: none;
-      font-size: 200%;
+      font-size: 150%;
       color: #150f61;
       cursor: pointer;
     }
@@ -22,18 +22,15 @@ nav {
       list-style: none;
       display: flex;
       margin: 0;
-      padding: 20px;
+      padding: 15px;
       background-color: #e1a730;
-     text-align: center;
     }
 
     .navMenu li {
     position: relative;
     list-style-type: none;
     display:block;
-    float: none;
     font-size: 100%;
-    width: 10%; 
     text-decoration:none;background-color: #e1a730;
     font-family: garamond, serif; color:#150f61;
     font-weight: bold;}
@@ -52,25 +49,21 @@ nav {
     font-weight: bold;}
 
 nav>ul li {
-    position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
-    text-align: center;
-    font-weight: bold;
-    color: darkmagenta;
-    float: left;}
+    position: relative;}
 
     .navMenu a {
       color: #150f61;
       text-decoration: none;
-      padding: 8px 12px;
+      padding: 10px;
       display: block;
     }
 
     .navMenu a:hover {
-        color: #150f61;
-      text-decoration: none;
-    margin: 4px;
-        align-content: center;
-      display: block;
+    color: #150f61; 
+    text-decoration: none;
+    align-content: center;
+    display: block;
+    font-size: 110%;
 
     }
 
@@ -86,11 +79,13 @@ nav>ul li {
       min-width: 150px;
       z-index: 1000;
       flex-direction: column;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .mobileHide li a {
       color: #150f61;
-      padding: 10px;
+      padding: 10x;
       text-decoration: none;
     }
 

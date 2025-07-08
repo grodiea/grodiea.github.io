@@ -4,43 +4,70 @@ Use: Informational  page about the farm
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.-->
+Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width,initial-scale=1">
-               <title>About</title>
-<style> 
-#beeforder {
-  display: flex;
-  position: relative;
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <title>About</title>
+              <link rel="stylesheet" href="navigation.css">
+              <link rel="stylesheet" href="style.css">
+<style>
+
+#grid-container {
+    grid-auto-rows: auto auto auto;
+    gap: 10px;
+    width:95%;}
+
+video {
+    width: 30%;
+    height: auto;
+    display: grid;
+    margin-left: 70px;
+    padding-bottom: 40px;
+}
+.video {
+  grid-column: 1 / span 2;}
+
+.square {grid-row: 3}
+
+
+div {
+  #beeforder {
+  grid-column: 3;
+  grid-row: 1;}
+
+.beeforder {
+  width:10%;
+  display: grid;
   float: right;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #150f61;
   border-collapse: collapse;
-  width: 100%;
   empty-cells: hide;
 }
 
-#beeforder td, #beeforder th {
-  border: 1px solid #ddd;
+.beeforder td, #beeforder th {
+  border: 1px solid #f2f2f2;
   padding: 8px;
 }
 
-#beeforder tr:nth-child(even){background-color: #f2f2f2;}
+.beeforder tr:nth-child(even){background-color: #f2f2f2;}
 
-#beeforder tr:hover {background-color: #ddd;}
+.beeforder tr:hover {background-color: #ddd;}
 
-#beeforder th {
+.beeforder th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: #39793d;
   color: #150f61;
-}#beeforder {
+}
+#beeforder {
   font-family:Garamond, serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 20%;
+  grid-column: 3;
+  display: grid;
 }
 
 #beeforder td, #beeforder th {
@@ -55,12 +82,22 @@ Tested:  June 29, 2025; Passed on Firefox and Chrome browsers.-->
 #beeforder th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: center;
+  text-align: center;  color: #150f61;
   background-color: #39793d;
-  color: #150f61;
-}
+ 
+}}
 
-a:link, a:visited, a:active {
+.square {
+    display: grid;
+    border-style: double; 
+    border-width: 12px; color: #e1a730;
+    width: 10%;
+    font-family:Garamond, serif;font-size: 100%; font-weight: bolder;
+    margin-bottom: 40px;}
+
+
+
+  a:link, a:visited, a:active {
     text-decoration: none;
     color:#150f61; padding:10px;
     font-family: Garamond, serif; text-align: center; font-size: 100%;
@@ -71,24 +108,9 @@ a:hover {text-decoration: none; text-align: center;
     align-items: center;
     font-family: Garamond, serif;font-size: 100%;}
 
-
-.square {
-  height: 70px;
-  width: 50px;
-  padding: 12px;
-  background-color: #39793d;}
-
-
-
-
-
   </style>
 </head>
 <body>
-    <header>
-  <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="style.css">
-    </header>
 <nav>
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" id="hamburger">&#9776;</label>
@@ -104,23 +126,33 @@ a:hover {text-decoration: none; text-align: center;
         <li><a href="#">Link 3</a></li>
       </ul>
     </li>
-    <li><a href="#">Reflection</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="reflection.html">Reflection</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+<div class="grid-container">
+    <div class="img"></div>
+    <div class="intro"></div>
+     <div class="video"></div>
+    <div class="beeforder"></div>  
+    <div class="square"></div>  
+</div>
   <h1>M&C Grodie Farms</h1>
     <h2>Dittmer, Missouri</h2>
-
-  <img src="about.jpg" alt="family photo" width="auto">
+<div class="grid-container"></p>
+  <img src="about.jpg" alt="family photo" width="auto" height="auto">
 <div id="intro">
-    <p class="flex-container">
     <p>Starting with a few head of Angus cattle in 2012, their farm has grown to a robust head of 300 spanning dozens of paddocks. Fans of 100% Angus meat appreciate the delicacy and tenderness of each juicy bite. Matt and Courtney perfected the product that their waitlist is for cattle yet to be born.
 Getting trained in artificial insemination, Courtney started breeding their pure Angus heifers with high quality, Japanese Wagyu sperm. The offspring of a portion of their herd produces what is called Wangus beef, marrying the name of combined breeds Wagyu and Angus. In 2019, the farm delivered their first Wangus calf. 
 This branch of their beef product would not be possible without Courtney’s passion, experience, and education in medicine. Full-time, Courtney is a Physician’s Assistant in Orthopedics at DePaul Hospital. 
 Being a middle school teacher and coach provides Matt the schedule to manage the daily activities. Alongside Matt and Courtney are the hardest working farmhands: Hannah (10), Molly (7), Hayden (4) and Clayton (3).</p></div> 
- <p class="flex-container"></p>
 
- <h3>Availability July 2025- July 2026</h3>
+<video controls>
+  <source src="Video.mp4" type="video/mp4"> 
+  Your browser does not support the video tag.
+</video>
+
+<table id="beeforder">Availability July 2025- July 2026</table>
 <table id="beeforder">
   <tr>
     <th>Beef</th>
@@ -148,12 +180,7 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     </tr>
     </table>
 
-<div id="media"></div>
 <div class="square"><a href="form.pdf">Order Form</a></div>
-<video controls>
-  <source src="Video.mp4" type="video/mp4"> 
-  Your browser does not support the video tag.
-</video>
 
   <footer>
         <p>Amanda Grodie; GrodieA@umsystem.edu &copy; Copyright 2025</p></footer>
