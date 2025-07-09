@@ -80,7 +80,6 @@ nav>ul li {
       z-index: 1000;
       flex-direction: column;
       flex-direction: column;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
     .mobileHide li a {
