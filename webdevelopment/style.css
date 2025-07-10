@@ -2,41 +2,53 @@ body {
     background-color:#f7f7f7;
     justify-content: center;}
 
-h1 {color: #150f61;
-    margin: 0px;
-    text-align: center;
-    font-family:Garamond, serif;
-    font-weight:bolder;
-    width:100%;
-    padding: 14px;}
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-h2 {color: #150f61;
-    text-align: center;
-    font-family:Garamond, serif;
-    margin:auto;
-    font-weight:bold;
-    width: 100%;
-    padding-bottom: 8px;}
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-h3 {color: #150f61;
-    text-align: center;
-    font-family:Garamond, serif;
-    margin:auto;
-    font-weight:bold;
-    width: auto;
-    padding-bottom: 8px;}
-
-p { font-size: 130%;
-    line-height: 1.6;
+p {
+    font-size: 140%;
     color:#150f61;
     text-align: justify;
-    font-family:Garamond, serif;
-    padding-bottom: 12px;
-    margin-left:5%;
+    font-family: "Yusei Magic";
     margin-right:5%;
+    margin-left: 5%;
     border-style:none;
-    text-decoration: none;
-}
+    text-decoration: none;}
+
+
+h1 {
+    font-size: 350%;
+    color: #150f61;
+    margin: 0px;
+    text-align: center;
+    font-family: "Permanent Marker";
+    width:100%;
+    padding: 9px;}
+
+h2 {color: #397f39;
+    text-align: center;
+    font-size: 250%;
+    font-family: "Permanent Marker";
+    margin:auto;
+    width: 100%;
+    padding-bottom: 15px;}
+
+h3 {color: #397f39;
+    text-align: center;
+    font-size: 175%;
+    font-family:"Permanent Marker";
+    margin:auto;
+    width: auto;
+    padding-bottom: 8px;}
 
 
 a:link, a:visited, a:active {
@@ -48,31 +60,20 @@ a:hover {text-decoration: none; text-align: center;
     color:#150f61; font-weight: bolder;
     align-items: center; padding: 1px;
     font-family: Garamond, serif;font-size: 120%;}
-
-img {
-    display: flex;
-    width: 80%;
-    height: auto;
-    padding: 10px;
-    justify-content: center;
-    margin: auto;
-    border: solid #39793d;
-    border-style:double;
-    border-width: 12px;}
-
-footer {color: #150f61;
-    background-color: #e1a730;
-    position:relative;
-    align-content: center;
-    font-size: x-small;
-    font-family:Garamond, serif;
-    bottom: 0;
-    left: 0;
-    width: 100%;}
+    
+footer {
+    background-image: url(footer.png);
+    text-align: center;
+    font-size: small;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;}
 
 .mail {
-    width:10px;
-    height:8px;
+    width: 20px;
+    height:18px;
     border-style: none;
     margin:0;
     padding:0;
@@ -80,12 +81,12 @@ footer {color: #150f61;
 }
 
 .mail:hover {
-    transform: scale(1.4)
+    transform: scale(1.8)
 }
 
 .phone {
-    width:10px;
-    height:8px;
+    width:20px;
+    height:18px;
     border-style: none;
     margin:0;
     padding:0;
@@ -93,32 +94,20 @@ footer {color: #150f61;
 }
 
 .phone:hover {
-    transform: scale(1.4)
+    transform: scale(1.8)
 }
-
 /*
-@media screen and (max-width: 959px) { make changes on other pages 
-    #container {
-            width: 100%;}
-    #p {
-            width:90%;}
-    #image {
-        width: 90%;
-    }}*/
+
+@media screen and (max-width: 959px) {
+
 
 @media screen and (max-width: 640px) {
-    #p {width: 90%;
-        justify-content: center;
-        height: auto;}
+   
 
     }
 
 @media screen and (max-width: 640px) {
-   .square {width: 30%;
-        align-content: center;
-        margin: auto;
-   }}
+  
 
 
-@media screen and (max-width: 320px) {
-    #container {width: 100%;}}
+@media screen and (max-width: 320px) {*/
