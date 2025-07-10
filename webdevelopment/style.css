@@ -26,8 +26,8 @@ h3 {color: #150f61;
     width: auto;
     padding-bottom: 8px;}
 
-p { font-size: 120%;
-    column-count: 1;
+p { font-size: 130%;
+    line-height: 1.6;
     color:#150f61;
     text-align: justify;
     font-family:Garamond, serif;
@@ -70,14 +70,41 @@ footer {color: #150f61;
     left: 0;
     width: 100%;}
 
-@media screen and (max-width: 959px) {
+.mail {
+    width:10px;
+    height:8px;
+    border-style: none;
+    margin:0;
+    padding:0;
+    display: inline;
+}
+
+.mail:hover {
+    transform: scale(1.4)
+}
+
+.phone {
+    width:10px;
+    height:8px;
+    border-style: none;
+    margin:0;
+    padding:0;
+    display: inline;
+}
+
+.phone:hover {
+    transform: scale(1.4)
+}
+
+/*
+@media screen and (max-width: 959px) { make changes on other pages 
     #container {
             width: 100%;}
     #p {
             width:90%;}
     #image {
         width: 90%;
-    }}
+    }}*/
 
 @media screen and (max-width: 640px) {
     #p {width: 90%;
