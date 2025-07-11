@@ -14,6 +14,11 @@ body {
   font-style: normal;
 }
 
+.covered-by-your-grace-regular {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;}
+
 p {
     font-size: 140%;
     color:#150f61;
@@ -61,11 +66,12 @@ a:hover {text-decoration: none; text-align: center;
     align-items: center; padding: 1px;
     font-family: Garamond, serif;font-size: 120%;}
     
-footer {
-    background-image: url(footer.png);
-    text-align: center;
+.footerbox {
+    margin-top: 10px;
+    margin-top: 10px;
     font-size: small;
     height: 50px;
+    background-color: #397f39;
     text-align: center;
     display: block;
     margin-right: auto;

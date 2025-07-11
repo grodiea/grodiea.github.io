@@ -13,32 +13,12 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
               <link rel="stylesheet" href="style.css">
               <link rel="stylesheet" href="navigation.css">
               <link rel="icon" href="images/favicon.ico">
-              <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-              
-<style>
-
-#grid-container {
-    grid-auto-columns: auto auto auto;
-    width:95%;
-    height: auto;}
-
-  
-  
-.covered-by-your-grace-regular {
-  font-family: "Covered By Your Grace", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
+            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+            <style>
 .farmhand {
   font-family: "Covered By Your Grace", cursive;
   font-size: 200%;
@@ -46,38 +26,33 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
   margin-left: 20%;
   margin-top: auto;
 }
-
 img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 900px;
+  max-width: 70%;
   height: auto;
+  display: block;
   padding: 12px;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
   border: solid #39793d;
   border-style:double;
-  border-width: 12px;;}
-
-video {
-    width: 55%;
-    height: auto;
-    float: inline-start;
-    margin-top: 50px;
-    margin-left: 70px;}
-
-.video {
-  grid-column: 1 / span 2;}
-
-
+  border-width: 12px;}
+    
 .beeforder {
   color: #150f61;
-  border-collapse: collapse;
-  empty-cells: hide;
+  empty-cells: hide;  
+  align-content: center;
+  display: block;
+  margin: 5%;
+
 }
 
-.beeforder td, #beeforder th {
-  border: 1px solid #f2f2f2;
-  padding: 8px;
+.beeforder td, .beeforder th {
+  border: 3px solid #150f61;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin:0%;
+
 }
 
 .beeforder tr:nth-child(even){background-color: #f2f2f2;}
@@ -89,51 +64,66 @@ video {
   padding-bottom: 12px;
   text-align: left;
   color: #150f61;
+  margin: 0%;
 }
-#beeforder { /*here is where changes need to be made*/
-  font-family:Garamond, serif;
+.beeforder { /*here is where changes need to be made*/
+  font-family: "Yusei Magic";  
   border-collapse: collapse;
-  width: 30%;
-  float: inline-end;
-  margin-right: 80px;
-  margin-top: 50px;
-  margin-bottom: 300px;
+  width: 1000px;
+
 }
 
-#beeforder td, #beeforder th {
-  border: 1px solid #ddd;
-  padding: 8px;
+.beeforder td, #beeforder th {
+  border: 3px solid #150f61;
+  margin: 0%;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-#beeforder tr:nth-child(even){background-color: #f2f2f2;}
+.beeforder tr:nth-child(even){background-color: #f2f2f2;}
 
-#beeforder tr:hover {background-color: #ddd;}
+.beeforder tr:hover {background-color: #ddd;}
 
-#beeforder th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+.beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
-
-  a:link, a:visited, a:active {
-    text-decoration: none;
-    color:#150f61; padding:10px;
-    font-family: Garamond, serif; text-align: center; font-size: 100%;
-    padding-left: 2px;}
-    
-a:hover {text-decoration: none; text-align: center;
-    color:#150f61; font-weight: bolder;
-    align-items: center;
-    font-family: Garamond, serif;font-size: 100%;}
-
-caption {
+  caption {
   font-weight: bold;
   font-size: 1.2em;
   padding: 1em;
   text-align: center;}
 
-  
+  .form {
+    font-size: 160%;
+    margin-left: 235px;
+    width: 200px;
+    border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color:#150f61; padding:10px; 
+    text-align: center; font-size: 100%;
+    padding-left: 2px;}
 
+    video {
+  display: flex;
+  float: right;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#150f61; padding:10px;
+    font-family: "Covered By Your Grace"; text-align: center; font-size: 120%;
+    padding-left: 2px;}
+    
+a:hover {
+    text-decoration: none; text-align: center;
+    color:#150f61; font-weight: bolder;
+    align-items: center;
+    font-family: "Covered By Your Grace"; font-size: 140%;}
+/*
 @media screen and (max-width: 959px) {
     #container {
             width: 100%;}
@@ -147,10 +137,11 @@ caption {
     p {width: 90%;
         justify-content: center;
         height: auto;}
-    #beeforder {width: 90%;
-  margin:auto}
-    .video {width: 90%;
-      margin:auto;}}
+    .beeforder {width: 90%;
+  margin-left:auto; margin-right: auto;}
+    .iframe {max-width: 90%;
+  height: auto;
+  display: block;}}
 
 
 @media screen and (max-width: 640px) {
@@ -158,11 +149,13 @@ caption {
         font-size: 100%;
         justify-content: center;
         height: auto;}}
+        .beeforder {width: 50%;
+  margin-left:auto; margin-right: auto;}
 
 
 @media screen and (max-width: 320px) {
     #container {width: 100%;}}
-
+*/
   </style>
 </head>
 <body>
@@ -185,17 +178,10 @@ caption {
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-<div class="grid-container">
-    <div class="img"></div>
-    <div class="intro"></div>
-     <div class="video"></div>
-    <div class="beeforder"></div>  
-    <div class="square"></div>  
-</div>
   <h1>M&C Grodie Farms</h1>
     <h2>Dittmer, Missouri</h2>
-<div class="grid-container"></div>
-  <img src="about.jpg" alt="family photo" width="auto" height="auto">
+<div class="video"></div>
+  <img src="about.jpg" alt="family photo">
 <div id="intro">
     <p>Starting with a few head of Angus cattle in 2012, their farm has grown to a robust head of 300 spanning dozens of paddocks. Fans of 100% Angus meat appreciate the delicacy and tenderness of each juicy bite. Matt and Courtney perfected the product that their waitlist is for cattle yet to be born.
 Getting trained in artificial insemination, Courtney started breeding their pure Angus heifers with high quality, Japanese Wagyu sperm. The offspring of a portion of their herd produces what is called Wangus beef, marrying the name of combined breeds Wagyu and Angus. In 2019, the farm delivered their first Wangus calf. 
@@ -208,16 +194,9 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
   <li>Hayden (5)</li>
   <li>Clayton (3)</li>
 </ul>
-
-<video controls>
-  <source src="Video.mp4" type="video/mp4"> 
-  Your browser does not support the video tag.
-</video>
-
-<div class="beeforder">
-<table id="beeforder">
-<caption><h3>Beef Availability July 2025 to July 2026</h3></caption>
-  <tr>
+<table class="beeforder"> 
+<caption><h3>Beef Availability July 2025 to July 2026</h3></caption>  
+<tr>
     <th>Beef</th>
     <th>Pork</th>
     <th>Chicken</th>
@@ -241,9 +220,13 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     <td>Quarter 2</td>
     <td>Quarter 2</td>
     </tr>
-    </table></div>
-<div><a href="form.pdf">Order Form</a></div>
-    <footer><div class="footerbox">
-        <p>Amanda Grodie;          <img class="mail" src="mail.png"alt="mail icon by Aya Sofya & Noun Project">         Grodiea@umkc.edu   <img class="phone" src="phone.png"alt="phone icon by Ilyas Aji Furqon & Noun Project">  1.888.888.8888      &copy; Copyright 2025</footer></div>
+    </table>
+    <div class="video"></div>
+<embed src="https://www.youtube.com/embed/zdziCL48w1E?si=0TIDbai_O6ZA4xbt" width="600" height="300" display="flex" float="left">
+
+<div class="form"><a href="form.pdf">Order Form</a></div>
+
+    <footer><div class="footerbox"> 
+        <p>Amanda Grodie;          <img class="mail" src="mail.png" alt="mail icon">         Grodiea@umkc.edu   <img class="phone" src="phone.png" alt="phone icon">  1.888.888.8888      &copy; Copyright 2025</div></footer>
 </body>
 </html>
