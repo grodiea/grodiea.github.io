@@ -13,7 +13,7 @@ nav {
 
     #hamburger {
       display: none;
-      font-size: 150%;
+      font-size: 160%;
       color: #150f61;
       cursor: pointer;
     }
@@ -22,7 +22,10 @@ nav {
       list-style: none;
       display: flex;
       margin: 0;
-      padding: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       background-color: #e1a730;
     }
 
@@ -30,7 +33,7 @@ nav {
     position: relative;
     list-style-type: none;
     display:block;
-    font-size: 100%;
+    font-size: 160%;
     text-decoration:none;background-color: #e1a730;
     font-family: garamond, serif; color:#150f61;
     font-weight: bold;}
@@ -63,7 +66,7 @@ nav>ul li {
     text-decoration: none;
     align-content: center;
     display: block;
-    font-size: 110%;
+    font-size: 140%;
 
     }
 

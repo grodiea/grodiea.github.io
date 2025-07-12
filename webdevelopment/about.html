@@ -21,14 +21,14 @@ Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
             <style>
 .farmhand {
   font-family: "Covered By Your Grace", cursive;
-  font-size: 200%;
+  font-size: 170%;
   color:#150f61;
   margin-left: 20%;
   margin-top: auto;
 }
 img {
   max-width: 70%;
-  height: auto;
+  height: 50%;
   display: block;
   padding: 12px;
   align-content: center;
@@ -43,7 +43,10 @@ img {
   empty-cells: hide;  
   align-content: center;
   display: block;
-  margin: 5%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 10px;
+  padding-bottom: 20px;
 
 }
 
@@ -68,16 +71,17 @@ img {
 }
 .beeforder { /*here is where changes need to be made*/
   font-family: "Yusei Magic";  
+  font-size: 120%;
   border-collapse: collapse;
-  width: 1000px;
+  width: 900px;
 
 }
 
 .beeforder td, #beeforder th {
   border: 3px solid #150f61;
   margin: 0%;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .beeforder tr:nth-child(even){background-color: #f2f2f2;}
@@ -87,15 +91,15 @@ img {
 .beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
+
   caption {
   font-weight: bold;
-  font-size: 1.2em;
-  padding: 1em;
+  font-size: 130%;
   text-align: center;}
 
   .form {
     font-size: 160%;
-    margin-left: 235px;
+    margin-left: 200px;
     width: 200px;
     border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
     padding-left: 60px;
@@ -103,15 +107,12 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 100px;
+    margin-top: 40px;
     text-decoration: none;
     color:#150f61; padding:10px; 
-    text-align: center; font-size: 100%;
+    text-align: center; font-size: 170%;
     padding-left: 2px;}
 
-    video {
-  display: flex;
-  float: right;
-}
 a:link, a:visited, a:active {
     text-decoration: none;
     color:#150f61; padding:10px;
@@ -123,39 +124,91 @@ a:hover {
     color:#150f61; font-weight: bolder;
     align-items: center;
     font-family: "Covered By Your Grace"; font-size: 140%;}
-/*
+
 @media screen and (max-width: 959px) {
-    #container {
-            width: 100%;}
     p {
-            width:90%;}
-    image {
-        width: 90%;
-    }}
+        width:90%;
+        font-size: large;}}
+    .beeforder {
+      width: 50%;
+      justify-content: center;}
+    .video {
+      width: 65%;
+      margin-right: 5%;
+      margin-left: auto;
+    align-items: center;}
+    .form {
+      width: 20%;
+      align-items: center;
+    }
+    
+
 
 @media screen and (max-width: 640px) {
-    p {width: 90%;
-        justify-content: center;
-        height: auto;}
-    .beeforder {width: 90%;
-  margin-left:auto; margin-right: auto;}
-    .iframe {max-width: 90%;
-  height: auto;
-  display: block;}}
+    
+  .smallerscreen {max-width: 90%;
+                  margin:auto}}
+  
 
 
-@media screen and (max-width: 640px) {
-    p {width: 90%;
-        font-size: 100%;
-        justify-content: center;
-        height: auto;}}
-        .beeforder {width: 50%;
-  margin-left:auto; margin-right: auto;}
+
 
 
 @media screen and (max-width: 320px) {
-    #container {width: 100%;}}
-*/
+   .smallerscreen {width: 90%;}}
+
+
+/*print settings*/
+
+@media print {
+  * {
+      background: transparent !important;
+      color: black !important;
+      font-family: Georgia, 'Times New Roman', Times, serif !important;
+      font-size: 11pt !important;
+      box-shadow: none !important;
+      text-shadow: none !important;}
+
+
+  nav,
+  .hamburger,
+  img,
+  .beeforder,
+  .form,
+  embed {
+ display: none;}
+
+
+   @page {
+    margin: 1in }}
+
+
+
+
+  /*
+  a[href^="http"]::after {
+      content: " [" attr(href)"]";
+      color: blue; */
+  
+  /*
+  @page :first {
+    margin-top: 2cm;
+  }
+
+  h1, ul {page-break-after: avoid;}
+
+  p, ul, table, h1, h2, h3 {
+    orphans: 3;
+    widows: 3;
+    font-size: 11pt;
+  } */
+
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -178,8 +231,10 @@ a:hover {
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
+  <div class="smallerscreen"></div>
   <h1>M&C Grodie Farms</h1>
     <h2>Dittmer, Missouri</h2>
+
 <div class="video"></div>
   <img src="about.jpg" alt="family photo">
 <div id="intro">
@@ -194,8 +249,9 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
   <li>Hayden (5)</li>
   <li>Clayton (3)</li>
 </ul>
+<div class="smallerscreen"></div>
 <table class="beeforder"> 
-<caption><h3>Beef Availability July 2025 to July 2026</h3></caption>  
+<caption><h3>Beef Availability <br>July 2025 to July 2026</h3></caption>  
 <tr>
     <th>Beef</th>
     <th>Pork</th>
@@ -221,12 +277,13 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     <td>Quarter 2</td>
     </tr>
     </table>
+    <div class="smallerscreen"></div>
     <div class="video"></div>
-<embed src="https://www.youtube.com/embed/zdziCL48w1E?si=0TIDbai_O6ZA4xbt" width="600" height="300" display="flex" float="left">
-
+<embed src="https://www.youtube.com/embed/zdziCL48w1E?si=0TIDbai_O6ZA4xbt" width="600" height="350" title="Video">
+<div class="smallerscreen"></div>
 <div class="form"><a href="form.pdf">Order Form</a></div>
 
-    <footer><div class="footerbox"> 
-        <p>Amanda Grodie;          <img class="mail" src="mail.png" alt="mail icon">         Grodiea@umkc.edu   <img class="phone" src="phone.png" alt="phone icon">  1.888.888.8888      &copy; Copyright 2025</div></footer>
+<div class="smallerscreen"></div>
+    <footer><p>Amanda Grodie; Grodiea@umkc.edu 1.888.888.8888 &copy; Copyright 2025</p></footer>
 </body>
 </html>
