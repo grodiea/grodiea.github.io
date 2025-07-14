@@ -7,10 +7,7 @@ body {
 font-family: "Yusei Magic", sans-serif; 
 src: url(YuseiMagic-Regular.ttf); 
 
-font-family: "Permanent Marker", cursive; 
-src: url(PermanentMarker-Regular.ttf); 
-
-font-family: "Covered By Your Grace", cursive; 
+font-family: "Covered By Your Grace"; 
 src: url(CoveredByYourGrace-Regular.ttf); 
 
 
