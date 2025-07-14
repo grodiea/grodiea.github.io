@@ -18,45 +18,125 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
             <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
-body {
-  margin: 0;}
 
 
-  .container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+
+.container {
+  display: grid;
   max-width: 100%;
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
-     justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 
-  }
+}
 
-  /* Styling of the Divs inside the flexbok*/  
-.container > div {
-    width:100%;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;}
+.container {
+  grid-template-columns: 33.3%  33.3% 33.3%;
+}
 
-#beepic, #honeypic, #pigpic {
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-  }
 
-/* Flex layout in mobile view switxhed to vertical*/
-@media screen and (max-width: 759px) {
+#chickentext {
+  grid-column: 2 / span 2;
+  grid-row: 1;}
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;}}
+#chickentext {
+  display: block;
+  position:relative;
+  float: right;
+  max-width: 100%;
+  margin-top: 0% !important;
+  margin-left: 15%;
+  padding-bottom:10px;
+}
+
+#chickenpic {
+  grid-column: 1;
+  grid-row: 1;}
+
+#chickenpic {
+  display: block;
+  position: relative;
+    margin-left: 10% !important;
+    padding: 0%;
+    margin: 0%;}
+
+img {
+    border-style: double; color: #397f39;
+    border-width: 12px;
+    padding: 12px;}
+
+  
+#pigtext {
+  grid-column:  1 / span 2;
+  grid-row: 2;}
+
+#pigtext {
+  display: block;
+  position:relative;
+  justify-items: center;
+  float: left;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0%;
+  margin-top: 40px;
+}
+
+#pigpic {
+  grid-column: 3;
+  grid-row: 2;}
+
+#pigpic {
+    display: block;
+  position: relative;
+   margin-right: 15% !important;
+    padding-right: 0%;
+    margin-right: 0%}
+
+#beepic {
+  grid-column: 1;
+  grid-row: 3;}
+
+ #beetext {
+  grid-column:  2 / span 2;
+  grid-row: 3;
+ }
+
+ #beepic {
+    display: inline-block;
+  position: relative;
+    margin-left: 10% !important;
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 50px;
+}
+
+#beetext {
+  display: block;
+  position: relative;
+  float: right;
+  max-width: 100%;
+  margin-left: 15%;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 0%;}
+
+
+
+
+
+/*
+
+  @media (max-width: 800px) {
+
+  
+*{max-width: 100%;}
+body, .container {
+flex-shrink: (5%);
+  align-items: center;
+  text-align: center;}}
+
+ */
+
     </style>
 </head>
 <main>
@@ -86,21 +166,19 @@ flex-wrap: wrap;
 
 <div class="container">
   <div id="chickenpic">
-    <img src="chickens5.png" alt="chickens" width = "35%" height="auto"></div></div>
+    <img src="chickens5.png" alt="chickens" width="500" height="300"></div>
     <div id="chickentext">
     <p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, MC Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div>
-<div class="container">
-        <div id="pigpic">
-    <img src="pigs.jpg" alt="pigs" width = "35%" height="auto"></div> </div>
-    <div class="container">
+
   <div id="pigtext">
       <p>For majority of the chickens at the farm, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. Less frequently, MC Farms offers fresh poultry including chicken and turkey. Be sure to join their waitlist as availability fluctuates. 
 Not far from the chicken coop, are the hogs. Raising hogs started to feed their bacon loving toddlers. Soon, their Christmas hams got a reputation that convinced Matt and Courtney to grow their hog supply. 
-</p></div></div>
-<div class="container">
+</p></div>
+    <div id="pigpic">
+    <img src="pigs.jpg" alt="pigs" width="375" height="300"></div> 
+
 <div id="beepic"> 
-  <img src="beebox.jpg" alt="bees" width = "35%" height="auto"></div></div>
-  <div class="container">
+  <img src="beebox.jpg" alt="bees" width="500" height="300"></div>
 <div id="beetext">
 <p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div></div>
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
