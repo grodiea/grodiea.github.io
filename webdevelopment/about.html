@@ -29,19 +29,14 @@ Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
   margin-right: 5%;
   flex-direction: column;
   column-count: 2;
-
-  padding: 0;}
-
-.column1 {
-max-width: 50vwin;
-min-width: 25vmax;}
-.column2 {
- max-width: 50vwin;
-  min-width: 25vmax;}
+ padding: 0;}
 
 #video {
     columns: 2;
 }
+
+#beeforder {
+  columns: 1;}
 
 #form {
   columns: 1;}
@@ -76,8 +71,7 @@ img {
   top: 0;
   right: 0;}
 
-
-.beeforder {
+#beeforder {
   color: #150f61;
   empty-cells: hide;  
   align-content: center;
@@ -88,7 +82,7 @@ img {
 
 .h2 {font-size: 120% !important;}
 
-.beeforder td, #beeforder th {
+#beeforder td, #beeforder th {
   border: 3px solid #150f61;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -96,17 +90,17 @@ img {
   padding-right: 35px;
 }
 
-.beeforder tr:nth-child(even){background-color: #f2f2f2;}
+#beeforder tr:nth-child(even){background-color: #f2f2f2;}
 
-.beeforder tr:hover {background-color: #ddd;}
+#beeforder tr:hover {background-color: #ddd;}
 
-.beeforder th {
+#beeforder th {
   padding-top: 14px;
   padding-bottom: 14px;
   color: #150f61;
   margin: 0%;
 }
-.beeforder { /*here is where changes need to be made*/
+#beeforder { /*here is where changes need to be made*/
   font-family: "Yusei Magic";  
   font-size: 100%;
   border-collapse: collapse;
@@ -114,16 +108,16 @@ img {
 
 }
 
-.beeforder td, .beeforder th {
+#beeforder td, #beeforder th {
   border: 3px solid #150f61;
   margin: 0%;
 }
 
-.beeforder tr:nth-child(even){background-color: #f2f2f2;}
+#beeforder tr:nth-child(even){background-color: #f2f2f2;}
 
-.beeforder tr:hover {background-color: #ddd;}
+#beeforder tr:hover {background-color: #ddd;}
 
-.beeforder th {
+#beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
 
@@ -293,18 +287,15 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
   <li>Hayden (5)</li>
   <li>Clayton (3)</li>
 </ul> 
-<div class="column1">
    <div class="container">
 <div style="width: 100%; min-width: 400px; max-width: 600px;">
 <div style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;">
 <p><iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/zdziCL48w1E?si=_Q_fpOPxmKgmsOCQ" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></p>
-</div></div></div></div>
-
-<div class="column2">
+</div></div></div>
 <div class="container">
+  <div id="beeforder">
+    <table id="beeforder">
 
- <div class="container-table">
-  <div class="beeforder"><table>
 <caption><h2>Beef Availability <br>July 2025 to July 2026</h2></caption>  
 <tr>
     <th>Beef</th>
@@ -330,9 +321,9 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     <td>Quarter 2</td>
     <td>Quarter 2</td>
     </tr>
-    </table></div> </div>
+    </table></div> 
 <div class="container">
-<div id="form"><a href="form.pdf">Order Form</a></div></div></div></div>
+<div id="form"><a href="form.pdf">Order Form</a></div></div></div>
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>
 </html>
