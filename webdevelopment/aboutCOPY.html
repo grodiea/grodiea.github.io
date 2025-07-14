@@ -4,7 +4,7 @@ Use: Informational  page about the farm
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
+Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
               <meta charset="utf-8">
@@ -39,8 +39,11 @@ Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
   grid-column: 1;
   grid-row: 2;}
 
+
 iframe {
-  grid-column: 2;}
+margin-top: 120px;
+margin-right: 5%;
+}
 
 .farmhand {
   font-family: "Covered By Your Grace", cursive;
@@ -76,8 +79,8 @@ img {
   border: 3px solid #150f61;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #beeforder tr:nth-child(even){background-color: #f2f2f2;}
@@ -92,7 +95,7 @@ img {
 }
 #beeforder { /*here is where changes need to be made*/
   font-family: "Yusei Magic";  
-  font-size: 100%;
+  font-size: 120%;
   border-collapse: collapse;
 
 
@@ -132,16 +135,18 @@ img {
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 100%;
     margin-top: 40px;
     margin-bottom: 200px;
       }
-  
+ 
+      
 
- #video {
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
+
+
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%; }}
 /*
 @media only screen and (max-width:959px)
 
@@ -217,28 +222,8 @@ img {
     font-size: 11pt;
   } */
 
-@media screen and (max-width: 992px) {
-  .column {
-    width: 50%; }}
-  .container {
-    max-width: 100%;}
-   iframe {order: 1;}
-  #beeforder {order: 2;}
-  #form {order:3;}
 
 
-
-@media screen and (max-width: 600px) {
-  .container {
-    max-width: 100%;}
-  iframe {
-    display: flex;}
-
-  .column {
-    width: 100%;}
-  iframe {order: 1;}
-  #beeforder {order: 2;}
-  #form {order:3;}}
 
 
 
@@ -280,7 +265,7 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
   <li>Molly (8)</li>
   <li>Hayden (5)</li>
   <li>Clayton (3)</li>
-</ul> <!--
+</ul>
 <div class="container">
 <div id="beeforder"><table id="beeforder"> 
 <caption><h2>Beef Availability <br>July 2025 to July 2026</h2></caption>  
@@ -308,14 +293,12 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     <td>Quarter 2</td>
     <td>Quarter 2</td>
     </tr>
-    </table></div> -->
+    </table></div>
     <div class="container">
-<div style="width: 100%; min-width: 600px; max-width: 800px;">
-<div style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;">
-<p><iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/zdziCL48w1E?si=_Q_fpOPxmKgmsOCQ" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></p>
-</div></div></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zdziCL48w1E?si=_Q_fpOPxmKgmsOCQ" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
 <div class="container">
-<div id="form"><a href="form.pdf">Order Form</a></div></div>
+<div id="form"><a href="form.pdf">Order Form</a></div></div></div>
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>
 </html>

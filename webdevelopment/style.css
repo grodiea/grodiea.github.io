@@ -2,22 +2,21 @@ body {
     background-color:#f7f7f7;
     justify-content: center;}
 
-.yusei-magic-regular {
-  font-family: "Yusei Magic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@font-face { 
 
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+font-family: "Yusei Magic", sans-serif; 
+src: url(YuseiMagic-Regular.ttf); 
 
-.covered-by-your-grace-regular {
-  font-family: "Covered By Your Grace", cursive;
-  font-weight: 400;
-  font-style: normal;}
+font-family: "Permanent Marker", cursive; 
+src: url(PermanentMarker-Regular.ttf); 
+
+font-family: "Covered By Your Grace", cursive; 
+src: url(CoveredByYourGrace-Regular.ttf); 
+
+
+font-family: "Rubik Dirt", system-ui;
+src: url(RubikDirt-Regular.ttf);
+}
 
 p {
     font-size: 140%;
@@ -31,51 +30,44 @@ p {
 
 
 h1 {
-    font-size: 300%;
+    font-size: 325%;
     color: #150f61;
     margin: 0px;
     text-align: center;
-    font-family: "Permanent Marker";
+    font-family: "Rubik Dirt";
     width:100%;
-    padding: 9px;}
+    margin-top: 20px;
+    padding-top: 25px;}
 
 h2 {color: #397f39;
     text-align: center;
-    font-size: 200%;
-    font-family: "Permanent Marker";
+    font-size: 275%;
+    font-family: "Covered By Your Grace";
     margin:auto;
     width: 100%;
     padding-bottom: 15px;}
 
-h3 {color: #397f39;
+h3 {color: #e1a730;
     text-align: center;
-    font-size: 175%;
-    font-family:"Permanent Marker";
+    font-size: 150%;
+    font-family:"Covered By Your Grace";
     margin:auto;
     width: auto;
     padding-bottom: 8px;}
 
+.footerbox {color: #150f61;
+    background-image: url(straw.png); 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0%;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    text-align: left!important;
+    font-size: 80%;}
 
-a:link, a:visited, a:active {
-    text-decoration: none;
-    color:#150f61; padding:8px 12px;
-    font-family: Garamond, serif; text-align: center; font-size: 100%;
-}
-a:hover {text-decoration: none; text-align: center;
-    color:#150f61; font-weight: bolder;
-    align-items: center; padding: 1px;
-    font-family: Garamond, serif;font-size: 120%;}
+
     
-.footerbox {
-    margin-top: 10px;
-    margin-top: 10px;
-    font-size: small;
-    height: 50px;
-    background-color: #397f39;
-    text-align: center;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;}
 
 .mail {
     width: 20px;

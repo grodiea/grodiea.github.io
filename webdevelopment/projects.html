@@ -4,54 +4,158 @@ Use: Informational  page about the farm
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  July 7, 2025; Passed on Firefox and Chrome browsers.-->
+Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
-              <meta charset="utf-8">
+                 <meta charset="utf-8">
               <meta name="viewport" content="width=device-width,initial-scale=1">
               <title>Projects</title>
               <link rel="stylesheet" href="style.css">
               <link rel="stylesheet" href="navigation.css">
               <link rel="icon" href="images/favicon.ico">
-              <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap" rel="stylesheet">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
 
+
+.container {
+  display: grid;
+  max-width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.container {
+  grid-template-columns: 33.3%  33.3% 33.3%;
+}
+
+
+#chickentext {
+  grid-column: 2 / span 2;
+  grid-row: 1;}
+
+#chickentext {
+  display: block;
+  position:relative;
+  float: right;
+  max-width: 100%;
+  margin-top: 0% !important;
+  margin-left: 15%;
+  padding-bottom:10px;
+}
+
+#chickenpic {
+  grid-column: 1;
+  grid-row: 1;}
+
+#chickenpic {
+  display: block;
+  position: relative;
+    margin-left: 10% !important;
+    padding: 0%;
+    margin: 0%;}
+
 img {
-    padding: 12px;
-    display: grid;
-    position: relative;
-    margin: 0px;
-    border: solid #39793d;
-    border-style:double;
+    border-style: double; color: #397f39;
     border-width: 12px;
-    width: 300px;
-    height: auto;}
+    padding: 12px;}
+
+  
+#pigtext {
+  grid-column:  1 / span 2;
+  grid-row: 2;}
+
+#pigtext {
+  display: block;
+  position:relative;
+  justify-items: center;
+  float: left;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0%;
+  margin-top: 40px;
+}
+
+#pigpic {
+  grid-column: 3;
+  grid-row: 2;}
+
+#pigpic {
+    display: block;
+  position: relative;
+   margin-right: 15% !important;
+    padding-right: 0%;
+    margin-right: 0%}
+
+#beepic {
+  grid-column: 1;
+  grid-row: 3;}
+
+ #beetext {
+  grid-column:  2 / span 2;
+  grid-row: 3;
+ }
+
+ #beepic {
+    display: inline-block;
+  position: relative;
+    margin-left: 10% !important;
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 50px;
+}
+
+#beetext {
+  display: block;
+  position: relative;
+  float: right;
+  max-width: 100%;
+  margin-left: 15%;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 0%;}
+
+
+@media screen and (max-width: 992px) {
+ 
+  .container {
+  max-width: 100%;
+  display: inline-block;}
+
+  .column {
+    width: 50%;}
    
-   a:link, a:visited, a:active {
-    text-decoration: none;
-    color:#150f61; padding:10px;
-    font-family: Garamond, serif; text-align: center; font-size: 100%;
-    padding-left: 2px;}
+  p {font-size: 120%;
+    max-width: 100%;}
     
-a:hover {text-decoration: none; text-align: center;
-    color:#150f61; font-weight: bolder;
-    align-items: center;
-    font-family: Garamond, serif;font-size: 100%;}
 
-.chickens5 {display: block;
-    position: relative;}
-.eggs {display: block;
-    float:left;}
+  img {width: fit-content;}}
 
+
+
+
+
+/*
+
+  @media (max-width: 800px) {
+
+  
+*{max-width: 100%;}
+body, .container {
+flex-shrink: (5%);
+  align-items: center;
+  text-align: center;}}
+
+ */
 
     </style>
-    <nav>
+</head>
+<main>
+  <nav>
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" id="hamburger">&#9776;</label>
 
@@ -70,14 +174,28 @@ a:hover {text-decoration: none; text-align: center;
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-</head>
-<body>
-        <h1>Products on the Farm</h1>
-        <h2>M&C GRODIE FARMS</h2>
-        <img src="chickens5.png" alt="chickens" width="350" height="300">
-        <div id=eggs><p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, MC Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div>
+</main>
+          <h1>M&C GRODIE FARMS</h1>
+        <h2>Products on the Farm</h2>
+        
 
-    <footer><div class="footerbox">
-        <p>Amanda Grodie;          <img class="mail" src="mail.png"alt="mail icon by Aya Sofya & Noun Project">         Grodiea@umkc.edu   <img class="phone" src="phone.png"alt="phone icon by Ilyas Aji Furqon & Noun Project">  1.888.888.8888      &copy; Copyright 2025</footer></div>
+<div class="container">
+  <div id="chickenpic">
+    <img src="chickens5.png" alt="chickens" width="500" height="300"></div>
+    <div id="chickentext">
+    <p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, MC Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div>
+
+  <div id="pigtext">
+      <p>For majority of the chickens at the farm, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. Less frequently, MC Farms offers fresh poultry including chicken and turkey. Be sure to join their waitlist as availability fluctuates. 
+Not far from the chicken coop, are the hogs. Raising hogs started to feed their bacon loving toddlers. Soon, their Christmas hams got a reputation that convinced Matt and Courtney to grow their hog supply. 
+</p></div>
+    <div id="pigpic">
+    <img src="pigs.jpg" alt="pigs" width="375" height="300"></div> 
+
+<div id="beepic"> 
+  <img src="beebox.jpg" alt="bees" width="500" height="300"></div>
+<div id="beetext">
+<p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div></div>
+<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>
 </html>
