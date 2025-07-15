@@ -19,36 +19,24 @@ Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
             <style>
 
-
 .container {
-  display: grid;
-  max-width: 100%;
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  position: relative;
   margin-left: 5%;
   margin-right: 5%;
-  grid-template-columns: 50% 50%;
-  box-sizing: border-box;}
-
-
-
-
-#beeforder {
-  grid-column: 1;
-  grid-row: 1;}
-
-#form {
-  grid-column: 1;
-  grid-row: 2;}
-
-iframe {
-  grid-column: 2;}
+  flex-direction: column;
+  column-count: 2;
+    padding: 0;}
 
 .farmhand {
   font-family: "Covered By Your Grace", cursive;
   font-size: 180% !important;
   color:#150f61;
   margin-left: 20%;
-  margin-top: auto;
-}
+  margin-top: auto;}
+
 img {
   max-width: 70%;
   height: 50%;
@@ -61,13 +49,22 @@ img {
   border-style:double;
   border-width: 12px;}
 
+
+ #video {
+  display: flex;
+  max-width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: absolute;
+  top: 0;
+  right: 0;}
+
+
+
 #beeforder {
   color: #150f61;
   empty-cells: hide;  
-  align-content: center;
-  display: block;
+  display: flex;
   max-width: 100%;
-  margin: auto;
 }
 
 .h2 {font-size: 120% !important;}
@@ -88,10 +85,11 @@ img {
   padding-top: 14px;
   padding-bottom: 14px;
   color: #150f61;
-  margin: 0%;
 }
 #beeforder { /*here is where changes need to be made*/
-  font-family: "Yusei Magic";  
+  display: flex;
+  position: relative;
+    font-family: "Yusei Magic";  
   font-size: 100%;
   border-collapse: collapse;
 
@@ -100,7 +98,7 @@ img {
 
 #beeforder td, #beeforder th {
   border: 3px solid #150f61;
-  margin: 0%;
+ 
 }
 
 #beeforder tr:nth-child(even){background-color: #f2f2f2;}
@@ -222,29 +220,20 @@ img {
   } */
 
 @media screen and (max-width: 992px) {
-  .column {
-    width: 50%; }}
   .container {
-    max-width: 100%;}
-   iframe {order: 1;}
-  #beeforder {order: 2;}
-  #form {order:3;}
+    max-width: 100%;}}
 
 
 
 @media screen and (max-width: 600px) {
   .container {
-    max-width: 100%;}
-  iframe {
-    display: flex;}
+    flex-direction: row;
+    max-width: 100%;}}
 
-  .column {
-    width: 100%;}
-  iframe {order: 1;}
-  #beeforder {order: 2;}
-  #form {order:3;}}
-
-
+ @media (max-width: 768px) {
+        .container {
+            flex-direction: row;
+            max-width: 100%;}}
 
 
   </style>
@@ -286,7 +275,7 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
   <li>Clayton (3)</li>
 </ul> 
 <div class="container">
-<div id="beeforder"><table id="beeforder"> 
+<table id="beeforder"> 
 <caption><h2>Beef Availability <br>July 2025 to July 2026</h2></caption>  
 <tr>
     <th>Beef</th>
