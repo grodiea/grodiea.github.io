@@ -19,44 +19,53 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
 body {
-  margin: 0;}
+  margin: 0;
+  padding: 0;}
 
 
   .container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  flex-direction: row;
   max-width: 100%;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-     justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+
 
   }
+
 
   /* Styling of the Divs inside the flexbok*/  
 .container > div {
-    width:100%;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;}
+    width:100%;}
 
-#beepic, #honeypic, #pigpic {
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-  }
+
+img {
+  display: inline-flex;
+  position: relative;
+  padding: 12px;
+  border: solid #39793d;
+  border-style:double;
+  border-width: 12px;}
+
+#chickentext, #beetext, #pigtext {
+  display: inline-flex;
+  margin-right: 0;
+  max-width: 50%;
+
+}
+
 
 /* Flex layout in mobile view switxhed to vertical*/
 @media screen and (max-width: 759px) {
 
-  .flex-container {
+  .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;}}
+
+
+
     </style>
 </head>
 <main>
@@ -86,23 +95,28 @@ flex-wrap: wrap;
 
 <div class="container">
   <div id="chickenpic">
-    <img src="kidsckcoop.jpg" alt="collecting eggsc" style="max-width: 600px; max-height: 400px"></div></div>
-    <div id="chickentext">
-    <p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, MC Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div>
+
+      <img src="kidsckcoop.jpg" alt="collecting eggs" style="max-width: 600px; max-height: 400px"></div></div>
 <div class="container">
-        <div id="pigpic">
-    <img src="hannah.jpg" alt="pigs" style="max-width: 600px; max-height: 400px"></div> </div>
-    <div class="container">
-  <div id="pigtext">
-      <p>For majority of the chickens at the farm, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. Less frequently, MC Farms offers fresh poultry including chicken and turkey. Be sure to join their waitlist as availability fluctuates. 
-Not far from the chicken coop, are the hogs. Raising hogs started to feed their bacon loving toddlers. Soon, their Christmas hams got a reputation that convinced Matt and Courtney to grow their hog supply. 
-</p></div></div>
+      <div id="chickentext" style="max-width:70%; margin-right: 0;"><p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, MC Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div></div>
+
 <div class="container">
-<div id="beepic"> 
-  <img src="beehive.jpg" alt="bees" style="max-width: 600px; max-height: 400px"></div></div>
-  <div class="container">
-<div id="beetext">
-<p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div></div>
-<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
+<div id="pigpic">
+    <img src="hannah.jpg" alt="pigs" style="max-width: 600px; max-height: 400px"></div></div>
+
+<div class="container">
+    <div id="pigtext"  style="max-width:70%; margin-right: 0;"><p>For majority of the chickens at the farm, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. Less frequently, MC Farms offers fresh poultry including chicken and turkey. Be sure to join their waitlist as availability fluctuates.
+Not far from the chicken coop, are the hogs. Raising hogs started to feed their bacon loving toddlers. Soon, their Christmas hams got a reputation that convinced Matt and Courtney to grow their hog supply.</p></div></div>
+
+
+<div class="container">
+    <div id="beepic"><img src="beehive.jpg" alt="bees" style="max-width: 600px; max-height: 400px"></div></div>
+   
+<div class="container">
+    <div id="beetext" style="max-width:70%; margin-right: 0;"><p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div></div>
+
+
+
+      <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>
 </html>
