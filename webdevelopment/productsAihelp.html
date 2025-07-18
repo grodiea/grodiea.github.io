@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
+
+    <style>
+        /* Reset all margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-style: double;
+            border: 12px solid #397f39;
+            padding: 12px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Section Styling */
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+            width: 80%;
+        }
+
+        /* Mobile Layout (Stacking for small screens) */
+        @media screen and (max-width: 759px) {
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "chickenpic"
+                    "chickentext"
+                    "pigpic"
+                    "pigtext"
+                    "beepic"
+                    "beetext";
+            }
+
+            /* Align items to center for smaller screens */
+            .grid div {
+                justify-self: center;
+                text-align: center;
+            }
+
+            img {
+                max-width: 80%;
+            }
+
+            .text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="hamburger">&#9776;</label>
+            <ul class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="products.html">Products</a>
+                    <ul class="mobileHide">
+                        <li><a href="#Eggs">Eggs</a></li>
+                        <li><a href="#Meats">Meats</a></li>
+                        <li><a href="#Honey">Honey</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>M&C GRODIE FARMS</h1>
+        <h2>Products on the Farm</h2>
+
+        <div class="grid">
+            <!-- Chicken Section -->
+            <div id="chickenpic">
+                <img src="chickenpic.png" alt="Chickens on the farm">
+            </div>
+            <div id="chickentext" class="text">
+                <h3>Eggs</h3>
+                <p>Farm fresh eggs are a delicacy that once you experience, you won’t want your eggs any other way. With plump hens producing over four dozen eggs daily, M&C Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sunrise...</p>
+            </div>
+
+            <!-- Pig Section -->
+            <div id="pigpic">
+                <img src="pigpic.jpg" alt="Pigs on the farm">
+            </div>
+            <div id="pigtext" class="text">
+                <h3>Meats</h3>
+                <p>For the majority of the chickens, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. M&C Farms also offers fresh poultry, including chicken and turkey. Join the waitlist as availability fluctuates...</p>
+            </div>
+
+            <!-- Bee Section -->
+            <div id="beepic">
+                <img src="beepic.jpg" alt="Bees on the farm">
+            </div>
+            <div id="beetext" class="text">
+                <h3>Honey</h3>
+                <p>Bees on the farm not only provide honey, but they also help with pollinating the plants. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. She now has 4 bee hives that she manages...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerbox">
+            <p>Amanda Grodie <img class="mail" src="mail.png" alt="Mail icon"> Grodiea@umkc.edu <img class="phone" src="phone.png" alt="Phone icon"> 1.888.888.8888 &copy; Copyright 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

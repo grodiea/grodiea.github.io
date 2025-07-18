@@ -19,17 +19,24 @@ Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
             <style>
+  body {
+  margin: 0;
+  padding: 0;
+
+}
 
 
- .grid {
-            display: grid;
-            grid-template-rows: 1fr;
-            overflow-x: auto;
-          grid-template-areas: 
-            "video beeforder";
-         justify-content: baseline;
-          justify-items: center;}
-   
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "video beeforder"
+    "form form";
+  align-items: baseline;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #video {
   grid-area: video;
 }
@@ -38,40 +45,38 @@ Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
   grid-area: beeforder;
 }
 
-
-
-
-.farmhand {
-  font-family: "Covered By Your Grace", cursive;
-  font-size: 180% !important;
-  color:#150f61;
-  margin-left: 20%;
-  margin-top: auto;
+#form {
+  grid-area: form;
 }
+
+/* Flexibility for Images */
 img {
-  max-width: 70%;
-  height: 50%;
+  max-width: 100%;
+  height: auto;
   display: block;
   padding: 12px;
-  align-content: center;
   margin-right: auto;
   margin-left: auto;
   border: solid #39793d;
-  border-style:double;
-  border-width: 12px;}
+  border-style: double;
+  border-width: 12px;
+}
 
+/* Video Aspect Ratio */
+#video {
+  margin-left: 5%;
+  max-width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
 
-
- #video {
-    max-width: 100%;
-  padding-top: 56.25%;} /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-
+/* Beef Order Table */
 #beeforder {
-  color: #150f61;
-  empty-cells: hide;
-  margin: auto;}
-
-.h2 {font-size: 120% !important;}
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 100%;
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 100%;
+}
 
 #beeforder td, #beeforder th {
   border: 3px solid #150f61;
@@ -81,86 +86,123 @@ img {
   padding-right: 35px;
 }
 
-#beeforder tr:nth-child(even){background-color: #b4b4b4;}
+#beeforder tr:nth-child(even) {
+  background-color: #b4b4b4;
+}
 
-#beeforder tr:hover {background-color: #39793d;}
+#beeforder tr:hover {
+  background-color: #39793d;
+}
 
 #beeforder th {
+  text-align: center;
+  color: #150f61;
+  background-color: #e1a730;
   padding-top: 14px;
   padding-bottom: 14px;
-  color: #150f61;
-  margin: 0%;
 }
-#beeforder { /*here is where changes need to be made*/
-  font-family: "Yusei Magic";  
-  font-size: 100%;
-  border-collapse: collapse;
-max-width: 100%;}
 
-
-#beeforder th {
-  text-align: center;  color: #150f61;
-  background-color: #e1a730;}
-
-  caption {
+#beeforder caption {
   font-size: 90% !important;
-  text-align: center;}
+  text-align: center;
+}
 
+/* Order Form */
 #form {
-    font-size: 160%;
-    border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
-    text-decoration: none; 
-    color:#150f61;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 30px;
-    text-align: center;
-    width: 300px;
-    height: 75px;
-    margin: auto;
-    max-width: 50%;}
+  font-size: 160%;
+  border: solid;
+  border-style: double;
+  border-width: 12px;
+  border-color: #e1a730;
+  text-decoration: none;
+  color: #150f61;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  text-align: center;
+  width: 300px;
+  height: 75px;
+  margin: auto;
+  max-width: 50%;
+}
 
-  
+/* Responsive Styling */
 
-
-
+/* For Small Screens (Phones) */
 @media screen and (max-width: 640px) {
   .grid {
-    max-width: 100%;}}
-  
+    grid-template-areas:
+      "video"
+      "beeforder"
+      "form";
+    max-width: 100%;
+    padding: 10px;
+  }
 
+  #video {
+    margin-left: 0;
+    max-width: 100%;
+    padding-top: 56.25%; /* Maintain aspect ratio */
+  }
 
+  #beeforder {
+    font-size: 90%;
+  }
 
+  #form {
+    font-size: 140%;
+    width: 80%;
+    margin-top: 20px;
+  }
 
+  .farmhand {
+    font-size: 120%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
 
+/* For Tablets */
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-areas:
+      "video beeforder"
+      "form form";
+  }
 
+  #video {
+    margin-left: 0;
+    max-width: 100%;
+    padding-top: 56.25%; /* Maintain aspect ratio */
+  }
 
+  #beeforder {
+    font-size: 95%;
+  }
 
+  #form {
+    font-size: 150%;
+    width: 60%;
+  }
+}
 
-@media print {
-  * {
-      background: transparent !important;
-      color: black !important;
-      font-family: Georgia, 'Times New Roman', Times, serif !important;
-      font-size: 11pt !important;
-      box-shadow: none !important;
-      text-shadow: none !important;}
+/* For Larger Screens */
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-areas:
+      "video beeforder"
+      "form form";
+    padding: 15px;
+  }
 
+  #video {
+    margin-left: 5%;
+  }
 
-  nav,
-  .hamburger,
-  img,
-  .beeforder,
-  .form,
-  .mail,
-  .phone,
-  embed {
- display: none;}
-
-
-   @page {
-    margin: 1in }}
-
+  #form {
+    width: 300px;
+  }
+}
 
 
   </style>
@@ -176,9 +218,9 @@ max-width: 100%;}
     <li class="dropdown">
       <a href="products.html">Products</a>
       <ul class="mobileHide">
-   <li><a href="#chickentext">Eggs</a></li>
-        <li><a href="#pigtext">Meats</a></li>
-        <li><a href="#beetext">Honey</a></li>
+   <li><a href="#chickenpic">Eggs</a></li>
+        <li><a href="#pigpic">Meats</a></li>
+        <li><a href="#beepic">Honey</a></li>
       </ul>
     </li>
     <li><a href="reflection.html">Reflection</a></li>

@@ -43,7 +43,7 @@ h1 {
 
 h2 {color: #397f39;
     text-align: center;
-    font-size: 275%;
+    font-size: 290%;
     font-family: "Covered By Your Grace";
     margin:auto;
     width: 100%;
@@ -95,18 +95,46 @@ h3 {color: #e1a730;
 .phone:hover {
     transform: scale(1.8)
 }
-/*
 
-@media screen and (max-width: 959px) {
+
 
 
 @media screen and (max-width: 640px) {
    
+p {
+    font-size: 120%;
+    color:#150f61;
+    text-align: justify;
+    font-family: "Yusei Magic";
+    margin-right:5%;
+    margin-left: 5%;
+    border-style:none;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 0%;}
 
-    }
 
-@media screen and (max-width: 640px) {
-  
+h1 {
+    font-size: 250%;
+    color: #150f61;
+    margin: 0px;
+    text-align: center;
+    font-family: "Chunk Five";
+    width:100%;
+    margin-top: 15px;
+    padding-top: 20px;}
 
+h2 {color: #397f39;
+    text-align: center;
+    font-size: 205%;
+    font-family: "Covered By Your Grace";
+    margin:auto;
+    width: 100%;
+    padding-bottom: 30px;}
 
-@media screen and (max-width: 320px) {*/
+h3 {color: #e1a730;
+    text-align: center;
+    font-size: 205%;
+    font-family: "Covered By Your Grace";
+    padding: auto;
+    margin: auto;    }}
