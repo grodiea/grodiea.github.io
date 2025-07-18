@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--Title:  Contact
+Use:  Home page for the farm website
+Author:  Amanda Grodie
+School/Term:  University of Missouri Columbia
+Developed: June 15, 2025
+Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
+<html lang="en-US">
+<head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <title>Contact</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+
+              <link rel="stylesheet" href="style.css">
+              <link rel="stylesheet" href="navigation.css">
+           
+              <link rel="icon" href="images/favicon.ico">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
+<style>
+
+
+* {
+  box-sizing: border-box;}
+
+
+
+  
+label {
+        font-family: "Covered By Your Grace";
+        font-size: 200%;
+        color:#397f39;
+          margin-left: 17%;
+          padding-top: 30px;
+    }
+
+input[type=text], select, textarea {
+  width: 65%;
+  padding: 12px;
+  margin-left: 17%;
+  border: 12px solid;
+  border-style: double; border-color:#397f39;
+  resize: vertical;
+    font-size: 20px;
+  font-family: "Yusei Magic";}
+
+input[type=text]:focus, textarea:focus {
+  outline: none;
+  background-color: lightgray;}
+
+  
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  padding-top: 50px;
+}
+
+input[type=submit] {
+  background-color:#e1a730;
+  color: #150f61;
+    margin-left: 17%;
+  padding: 25px 50px;
+  margin-bottom: 50px;
+  font-size: 200%;
+   font-family: "Covered By Your Grace";
+  border: none;
+  cursor: pointer;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #397f39;
+  border: none;
+}
+
+.value {
+  font-family: "Yusei Magic";
+  font-size: 130%;}
+
+
+.container {
+
+  border: none;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.submit {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+</style>
+
+<nav>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="hamburger">&#9776;</label>
+
+  <ul class="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="products.html">Products</a>
+      <ul class="mobileHide">
+   <li><a href="chickenpic">Eggs</a></li>
+        <li><a href="pigpic">Meats</a></li>
+        <li><a href="beepic">Honey</a></li>
+      </ul>
+    </li>
+    <li><a href="reflection.html">Reflection</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<body>
+                    <h1>CONTACT US</h1>
+                    <form action="mailto:grodiea@missouri.edu" method="post" enctype="text/plain">
+            <div>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Greta" autofocus required /><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Thunberg" autofocus required/><br>
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" name="email" placeholder="Best Way to Connect @ Goes Here" autofocus required/><br><br>
+                <label for="lname">Leave Us a Message</label><br>
+                <textarea name="message" required rows="10" cols="30" placeholder="We are excited to hear from you!" autofocus required></textarea></br><br>
+
+                <input type="submit" value="Submit"><br>
+                        <br><br>
+                    </form> 
+<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
+</body>
+</html>

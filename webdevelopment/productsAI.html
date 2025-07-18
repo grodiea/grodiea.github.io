@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--Title:  About Page
+Use: Informational  page about the farm
+Author:  Amanda Grodie
+School/Term:  University of Missouri Columbia
+Developed: June 15, 2025
+Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
+<html lang="en-US">
+<head>
+                 <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width,initial-scale=1">
+              <title>Products</title>
+              <link rel="stylesheet" href="style.css">
+              <link rel="stylesheet" href="navigation.css">
+              <link rel="icon" href="images/favicon.ico">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
+
+
+<style>
+
+
+
+/* Grid layout in desktop view*/
+  @media screen and (min-width: 760px) {
+
+    .grid {
+    display: grid;
+
+    justify-items: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "chickenpic chickentext"
+        "pigtext pigpic"
+        "beepic beetext";
+
+    justify-content: space-between;}
+    
+    img {
+    border-style: double; color: #397f39;
+    border-width: 12px;
+    padding: 12px;}}
+
+
+#chickenpic {
+    grid-area: chickenpic;
+    display: inline-block;
+    position: relative;
+    margin-left: 5%;}
+
+#chickentext {
+    grid-area: chickentext;
+    margin-left: 5%;
+    max-width: 55%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 50px;}
+
+#pigtext {
+    grid-area: pigtext;
+    margin-left: 5%;
+    max-width: 55%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 50px;}
+
+
+#pigpic {
+    grid-area: pigpic;
+    margin-left: 5%;
+    display: inline-block;
+    position: relative;
+}
+ 
+  
+#beepic {
+   grid-area: beepic;
+     margin-left: 5%;
+    display: inline-block;
+    position: relative;}
+ 
+    
+#beetext {
+     grid-area: beetext;
+       margin-left: 5%;
+    max-width: 55%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 50px;}
+
+
+
+/* Grid layout in mobile view*/
+@media screen and (max-width: 759px) {
+    .grid {
+        display: grid;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        grid-column: 1;
+        margin:auto;
+        max-width: 100%;
+        grid-template-areas: 
+            "chickenpic"
+            "chickentext"
+            "pigpic"
+            "pigtext"
+            "beepic"
+            "beetext";
+           }
+           #chickenpic {
+            grid-area: chickenpic;
+            justify-self: center;}
+            #chickentext {
+            grid-area: chickentext;
+            justify-self: center;}
+            #pigpic {
+            grid-area: pigpic;
+            justify-self: center;}
+            #pigtext {
+            grid-area: pigtext;
+            justify-self: center;}
+            #beepic {
+            grid-area: beepic;
+            justify-self: center;}
+            #beetext {
+            grid-area: beetext;
+            justify-self: center;}
+           }
+
+ /* For mobile screens */
+@media screen and (max-width: 759px) {
+  #chickentext p,
+  #pigtext p,
+  #beetext p {
+    font-size: 5vw; 
+    line-height: 1.5; 
+  }
+
+  h1, h2, h3 {
+    font-size: 6vw; 
+    text-align: center;
+  }
+
+
+  #chickentext,
+  #pigtext,
+  #beetext {
+    padding: 10px; 
+    max-width: 90%; 
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Only one column */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-areas: 
+      "chickenpic"
+      "chickentext"
+      "pigpic"
+      "pigtext"
+      "beepic"
+      "beetext";
+  }
+
+
+  #chickentext,
+  #pigtext,
+  #beetext {
+    width: 100%; 
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #chickenpic,
+  #chickentext,
+  #pigpic,
+  #pigtext,
+  #beepic,
+  #beetext {
+    display: block;
+    margin: 0 auto;
+}
+    img {
+    border-style: double; color: #397f39;
+    border-width: 12px; padding: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    max-width: 100%;}
+    
+
+  
+
+
+
+</style>
+<main>
+  <nav>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="hamburger">&#9776;</label>
+
+    <ul class="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="projects.html">Projects</a>
+      <ul class="mobileHide">
+   <li><a href="#Eggs">Eggs</a></li>
+        <li><a href="#Meats">Meats</a></li>
+        <li><a href="#Honey">Honey</a></li>
+      </ul>
+    </li>
+    <li><a href="reflection.html">Reflection</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</main>
+<body>
+          <h1>M&C GRODIE FARMS</h1>
+        <h2>Products on the Farm</h2>
+        
+  <div id="chickenpic">
+    <img src="chickenpic.jpg" alt="chicken eggs" width="400" height="300"></div>
+    <div id="chickentext">
+    
+    <h3>Eggs</h3> <p>Farm fresh eggs are a delicacy that once you experience, you won’t your eggs any other way. With plump hens producing over four dozen eggs daily, M&C Farms sells non-bleached, farm fresh eggs by the dozen. Mostly varying in shades of brown, their egg collection begins at sun rise. From an early age, the responsibility to collect and count the eggs was on Hannah, the oldest. Now, with the addition of her siblings, Hannah’s egg collecting role most days is to supervise. Only every now and again do Hayden or Clayton grip an egg too tightly.</p></div>
+  
+    <div id="pigpic">
+    <img src="pigpic.jpg" alt="pigs" width="400" height="300"></div> 
+  <div id="pigtext">
+      <h3>Meats</h3>
+      <p>For majority of the chickens at the farm, their livelihood depends on producing eggs. When production stops, the chickens are used for their meat. Less frequently, M&C Farms offers fresh poultry including chicken and turkey. Be sure to join their waitlist as availability fluctuates. 
+Not far from the chicken coop, are the hogs. Raising hogs started to feed their bacon loving toddlers. Soon, their Christmas hams got a reputation that convinced Matt and Courtney to grow their hog supply. 
+</p></div>
+
+<div id="beepic"> 
+  <img src="beepic.jpg" alt="bees" width="400" height="300"></div>
+<div id="beetext">
+    <h3>Honey</h3>
+<p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div>
+
+
+<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
+</body>
+</html>

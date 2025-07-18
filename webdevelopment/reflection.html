@@ -10,71 +10,68 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
               <meta charset="utf-8">
               <meta name="viewport" content="width=device-width,initial-scale=1">
               <title>Reflection</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+
               <link rel="stylesheet" href="style.css">
               <link rel="stylesheet" href="navigation.css">
+           
               <link rel="icon" href="images/favicon.ico">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
-            <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-            <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
   * {
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
 }
-
-
-
-.container {
-  display: grid;
-  position: relative;
-  justify-content: center;
-  max-width: 100%;
-  grid-template-columns: 35% 65%;
-  margin-left: 5%;
-  margin-right:5%;
-  gap: 0;}
-
-.image {  grid-column: 1;
-}
-.photo {grid-column: 1;}
-.content {grid-column: 2;}
-
-.h3 {margin-top: 30px !important;}
-
-.content {
-    max-width: 100%;
-    width: 900px;
-    float: right !important;
-  margin-right: 0;
-  margin-left: 0;
-  }
 
 body {
     background-color:#f7f7f7;}
 
+.container {
+  background-color: #f7f7f7;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+margin-left: 5%;
+margin-right: 5%;
+  margin-bottom: 5%;
+  border: solid;
+  padding-top: 20px;
+  border-style: double; color: #150f61;
+  border-width: 12px;}
+
+  
+.h3 {margin-top: 30px !important;}
+
+.content {
+    max-width: 100%;
+    padding-top: 20px;
+   padding: 20px;
+   margin: 0;
+   line-height: 1.6;
+
+  }
+
+/*
+
+.image, .photo {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
 img {
-    max-width: 50%;
+    max-width: 100%;
+    margin: 0;
     height: auto;
-    display: inline-block;
-    margin-left: 2%;
+    display: block;
     padding: 12px;
     border: solid #39793d;
     border-style:double;
     border-width: 12px;
     margin-top: 20px;
-    margin-bottom: 40px;
-    margin-right: 0px;}
+    margin-bottom: 40px;}
+*/
 
-
-@media (min-width: 600px) {
-    .photo {
-    display: flex;
-    margin-left: 30% !important;}
-  .image {
-    display: flex;
-   margin-left: 30% !important;}}
    
 
 
@@ -95,9 +92,9 @@ img {
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li class="dropdown">
-      <a href="projects.html">Projects</a>
+      <a href="products.html">Products</a>
       <ul class="mobileHide">
-    <li><a href="#chickenpic">Eggs</a></li>
+   <li><a href="#chickenpic">Eggs</a></li>
         <li><a href="#pigpic">Meats</a></li>
         <li><a href="#beepic">Honey</a></li>
       </ul>
@@ -106,41 +103,41 @@ img {
     <li><a href="contact.html">Contact</a></li>
   </ul>
     </nav>
-<div class="container">
-    <div class="image"></div>
-    <div class="content"></div>
-    <div class="photo"></div>  
-    <div class="content2"></div>  
 </div>
     <div class="h1"></div>
-    <h1>M&C GRODIE FARMS</h1>
-    <h2>Reflection</h2> 
-    <div class="image"></div>
-    <img src="twoboysinoveralls.png" alt="two boys wearing overalls on a dirt road" width="500" height="345">
-    <div class="content">
+    <h1>GENERATIONAL FARMING</h1>
     <h2><em>You been farmin' long?</em></h2>
-<p>As soon as he could barely see over the steering wheel, Matt started hauling hay
-bales in the back of his dad’s rusted out Ford F-150 from the field to the barn on the
-family farm. Before long, he was behind the wheel of the family tractor. Bailing hay
-is a slow methodical process so Matt quickly learned how to maneuver the gears
-and how to switch equipment. While hay season is a time-consuming portion of
-farmers’ summers, it is only a small portion of their responsibilities.</p>
-<p>Alongside his dad, Matt also learned how to care for livestock. At a young age, he
-learned about life and death. A few times, he needed to aid his dad in the birth of
-cattle when mother cows were unable to deliver independently. He also witnessed a
-well-loved cow be euthanized by the veterinarian when she was too sick to recover.
-He was also present to wrangle squealing newborn piglets needing to get tagged
-and vaccinated. Nearly every farm experience, Matt was there learning alongside his dad.</p>
+
+<!--  <div class="container">
+    <div class="image">
+    <img src="twoboysinoveralls.png" alt="two boys wearing overalls on a dirt road" width="500" height="345"></div></div>
+    -->
+    <div class="container">
+  <div class="content">
+    
+<p><br>As soon as he could barely see over the steering wheel, Matt started hauling hay
+bales in the back of his dad’s rusted-out Ford F-150 from the hay field to the pole barn on the
+family farm. Before long, he was behind the wheel of the family tractor. Baling hay
+is a slow methodical process and over the years Matt learned how to maneuver the gears
+and how to switch equipment. While hay season is a time-consuming portion of a
+farmer's summer, it is only a small portion of their responsibilities.</p>
+<br>
+<p>Alongside his dad, Matt learned how to manage livestock. He
+learned the hard lesson about life and death through taking care of animals. A few times, he needed to help his dad with birthing new life when cattle were unable to deliver independently. He also witnessed a
+well-loved cow being euthanized by the veterinarian when she was too sick to recover. Mourning didn't last long, as he needed to wrangle squealing piglets needing to get tagged
+and vaccinated. Nearly every farm experience, Matt was learning alongside his dad.</p>
+<br>
 <p>In 2012, a farm they previously toured officially became theirs. Shortly after, they
 changed the name from Lone Elm Farm to M&C Grodie Farms. Starting a family was
-another dream for Matt and Courtney. Raising children on their own property came
-was inevitable; because as a third-generation farmer, Matt has farming in his blood.</p>
+another dream for Matt and Courtney. Raising children on their own property
+was inevitable.</p>
+<br>
 <p>Matt’s mom bought a precious picture of two young boys, sheepishly looking at
 one another with the text “you been farmin' long?” One of the young boys
-resembled her son and she knew Matt's dad dreamt of his son continuing the legacy of farming. That picture hung in the basement of Matt's parent’s home until Matt moved in with Courtney. Little did his
-mom know that her purchase of this picture nearly 40 years ago would beprominently displayed on the wall of her son’s home; surrounded by acres and acres of farmland. To answer the question: yes, because farming is in our blood.</p></div>
-<div class="photo"></div>
-<img src="reflectphoto.png" alt="father and kid walking" width="500" height="345">  
+resembled her son and she knew Matt's dad dreamt of his son continuing the legacy of farming. That picture hung in the basement of his parents' home until Matt moved in with Courtney. Little did his
+mom know that her purchase would be prominently displayed on the wall of her son’s home over 40 years later. To answer the question: as a third-generation farmer...<h2 style="font: size 100% !important;">...yes, Matt has farming in his blood.<h2></p></div></div>
+<!-- <div class="photo">
+<img src="reflectphoto.png" alt="father and kid walking" width="500" height="345"></div></div></div> -->
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>
 </html>
