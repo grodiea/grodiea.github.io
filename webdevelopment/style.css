@@ -22,7 +22,7 @@ src: url(Chunk\ Five\ Print.ttf)}
 p {
     font-size: 140%;
     color:#150f61;
-    text-align: justify;
+    text-align:justify;
     font-family: "Yusei Magic";
     margin-right:5%;
     margin-left: 5%;
@@ -50,8 +50,9 @@ h2 {color: #397f39;
     padding-bottom: 30px;}
 
 h3 {color: #e1a730;
-    font-size: 225%;
+    font-size: 250%;
     font-family: "Covered By Your Grace";
+    text-align: center;
     padding: auto;
     margin: 0 auto;
     margin-right: 5%;}
@@ -61,6 +62,7 @@ h3 {color: #e1a730;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 0%;
+    height: 50px;
     bottom: 0 !important;
     left: 0 !important;
     width: 100% !important;
@@ -98,13 +100,12 @@ h3 {color: #e1a730;
 
 
 
-
-@media screen and (max-width: 640px) {
+/*smaller screen sizes*/
+@media screen and (max-width: 759px) {
    
 p {
-    font-size: 120%;
+    font-size: 145%;
     color:#150f61;
-    text-align: justify;
     font-family: "Yusei Magic";
     margin-right:5%;
     margin-left: 5%;
@@ -115,7 +116,7 @@ p {
 
 
 h1 {
-    font-size: 250%;
+    font-size: 200%;
     color: #150f61;
     margin: 0px;
     text-align: center;

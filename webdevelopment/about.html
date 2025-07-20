@@ -4,53 +4,49 @@ Use: Informational  page about the farm
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  July 13, 2025 assed on Firefox and Chrome browsers.-->
+Tested:  July 20, 2025 assed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
-              <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width,initial-scale=1">
-              <title>About</title>
-              <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width,initial-scale=1">
+                        <title>About</title>
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
 
-              <link rel="stylesheet" href="style.css">
-              <link rel="stylesheet" href="navigation.css">
+                        <link rel="stylesheet" href="style.css">
+                        <link rel="stylesheet" href="navigation.css">
            
-              <link rel="icon" href="favicon.ico">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
-            <style>
+                        <link rel="icon" href="favicon.ico">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
+<style>
 
+/* Grid layout in desktop view*/
+  @media screen and (min-width: 760px) {
 
  .grid {
-            display: grid;
-            grid-template-rows: 1fr;
-            overflow-x: auto;
-          grid-template-areas: 
-            "video beeforder";
-          justify-items: center;}
-   
-#video {
-  grid-area: video;
-}
+          display: grid;
+          gap: 15px;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "header header"
+          "img img"
+          "intro intro" 
+          "farmhand farmhand" 
+          "video beeforder"
+          "quote form"
+          "footer footer";}
 
-table {
-  grid-area: beeforder;
-  border-collapse: collapse;
-  padding-bottom: 30px;
-  margin: auto;
-}
+#header {
+  grid: column start 1;
+  grid: column end 2;
+  grid-area: header;
+  margin: auto;}
 
-
-.farmhand {
-  font-family: "Covered By Your Grace", cursive;
-  font-size: 180% !important;
-  color:#150f61;
-  margin-left: 20%;
-  margin-top: auto;
-}
-img {
-  max-width: 70%;
-  height: 50%;
+#img {
+  grid: column start 1;
+  grid: column end 2;
+  grid-area: img;
   display: block;
   padding: 12px;
   align-content: center;
@@ -60,18 +56,56 @@ img {
   border-style:double;
   border-width: 12px;}
 
+#intro {
+  grid-area: intro;
+    grid: column start 1;
+  grid: column end 2;
+  margin-bottom: 0% !important;
+  padding-bottom: 0% !important;
+  line-height: 1.6;}
+
+#farmhand {
+  grid-area: farmhand;
+  grid: column start 1;
+  grid: column end 2;
+  font-family: "Covered By Your Grace", cursive; font-size: 220%;
+  text-align: center;
+  color:#150f61;
+  padding-top: 0%;
+  margin-top: 0%;
+padding-bottom: 40px;
+margin-bottom: auto;}
 
 
- #video {
-    max-width: 100%;
-  padding-top: 56.25%;} /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+.video-wrapper {
+  grid: column start 1;
+  grid: column end 1;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 #beeforder {
+  grid-area: beeforder;
+  grid-column: 2;
   color: #150f61;
   empty-cells: hide;
-  margin: auto;}
+justify-self: center;}
 
-.h2 {font-size: 120% !important;}
+  #beeforder table {
+  border-collapse: collapse;
+}
 
 #beeforder td, #beeforder th {
   border: 3px solid #150f61;
@@ -89,45 +123,207 @@ img {
   padding-top: 14px;
   padding-bottom: 14px;
   color: #150f61;
-  margin: 0%;
 }
 #beeforder { /*here is where changes need to be made*/
   font-family: "Yusei Magic";  
-  font-size: 100%;
-  border-collapse: collapse;
-max-width: 100%;}
-
-
+  font-size: 120%;}
 #beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
 
   caption {
-  font-size: 90% !important;
+  font-size: 200% !important;
+  color: #39793d;
+  font-family: "Covered By Your Grace" !important;
   text-align: center;}
 
+.quote {
+  grid-area: quote;
+  grid-column: 1;
+  margin: 5%
+}
+
 #form {
+    grid-area: form;
+    grid-column: 2;
     font-size: 160%;
+    margin: auto;
     border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
     text-decoration: none; 
     color:#150f61;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 30px;
+    justify-content: center;
     text-align: center;
-    width: 300px;
-    height: 75px;
-    margin: auto;
-    max-width: 40%;}
+    justify-self: center;}
 
+  .footerbox {
+  grid-area: footer;
+  grid-column: 1 / 2;
+  max-width: 100%;}
+
+.farmhand {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;}
+
+.farmhand li {
+  display: inline;
+  padding-right: 25px;
+}}
+
+
+/*smaller screen sizes*/
+@media screen and (max-width: 759px) {
+
+  @media (max-width: 768px) {
+        .grid {
+          display: grid;
+          padding-left: 10px;
+          padding-right: 10px;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-template-areas:
+          "header" 
+          "img"
+          "intro" 
+          "farmhand" 
+          "video" 
+          "beeforder"
+          "form"
+          "quote"
+          "footer";}
+        }
   
 
+#header {
+  grid-area: header;
+  text-align: center;
+  margin: auto;}
+
+#intro {
+  grid-area: intro;
+  line-height: 1.5;
+  justify-self: center;
+  margin: auto;}
+
+ #img img {
+  grid-area: img;
+  display: block;
+  padding: 12px;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid #39793d;
+  border-style:double;
+  border-width: 12px;
+  height: auto;
+  display: block;
+  max-width: 70%;
+  justify-self: center;}
+
+#farmhand {
+  grid-area: farmhand;
+  font-family: "Covered By Your Grace", cursive; font-size: 220%;
+  text-align: center;
+  color:#150f61;
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-bottom: 40px;
+  margin-bottom: auto;}
 
 
-@media screen and (max-width: 640px) {
-  .grid {
-    max-width: 100%;}}
-  
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+#beeforder {
+  grid-area: beeforder;
+  color: #150f61;
+  empty-cells: hide;
+justify-self: center;}
+
+  #beeforder table {
+  border-collapse: collapse;    
+  margin-top: 50px;
+}
+
+#beeforder td, #beeforder th {
+  border: 3px solid #150f61;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20x;
+  padding-right: 20px;
+}
+
+#beeforder tr:nth-child(even){background-color: #b4b4b4;}
+
+#beeforder tr:hover {background-color: #39793d;}
+
+#beeforder th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #150f61;
+}
+#beeforder { 
+  font-family: "Yusei Magic";  
+  font-size: 1.1rem}
+#beeforder th {
+  text-align: center;  color: #150f61;
+  background-color: #e1a730;}
+
+  caption {
+  font-size: 200% !important;
+  color: #39793d;
+  font-family: "Covered By Your Grace" !important;
+  text-align: center;}
+
+.quote  {
+  grid-area: quote;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#form {
+    grid-area: form;
+    font-size: 160%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
+    text-decoration: none; 
+    color:#150f61;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;}
+
+  .footerbox {
+  grid-area: footer;
+
+  max-width: 100%;}
+
+.farmhand {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;}
+
+.farmhand li {
+  display: inline;
+  align-content: space-between;
+  padding-right: 25px;
+}
+}
 
 
 
@@ -163,53 +359,55 @@ max-width: 100%;}
 
 
 
-  </style>
+</style>
 </head>
 <body>
 <nav>
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" id="hamburger">&#9776;</label>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" id="hamburger">&#9776;</label>
 
-  <ul class="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="products.html">Products</a>
-      <ul class="mobileHide">
-   <li><a href="products.html#chickentext">Eggs</a></li>
-        <li><a href="products.html#pigtext">Meats</a></li>
-        <li><a href="products.html#beetext">Honey</a></li>
-      </ul>
-    </li>
-    <li><a href="reflection.html">Reflection</a></li>
-    <li><a href="contact">Contact</a></li>
-  </ul>
+           <ul class="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+                  <li class="dropdown">
+               <a href="products.html">Products</a>
+                  <ul class="mobileHide">
+                  <li><a href="products.html#chickentext">Eggs</a></li>
+                  <li><a href="products.html#pigtext">Meats</a></li>
+                  <li><a href="products.html#beetext">Honey</a></li>
+            </ul></li>
+                  <li><a href="reflection.html">Reflection</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+            </ul>
 </nav>
-  <h1>M&C GRODIE FARMS</h1>
-    <h2>Dittmer, Missouri</h2>
-
-  <img src="about.jpg" alt="family photo">
-<div id="intro">
-    <p>Starting with a few head of Angus cattle in 2012, their farm has grown to a robust head of 300 spanning dozens of paddocks. Fans of 100% Angus meat appreciate the delicacy and tenderness of each juicy bite. Matt and Courtney perfected the product that their waitlist is for cattle yet to be born.
-Getting trained in artificial insemination, Courtney started breeding their pure Angus heifers with high quality, Japanese Wagyu sperm. The offspring of a portion of their herd produces what is called Wangus beef, marrying the name of combined breeds Wagyu and Angus. In 2019, the farm delivered their first Wangus calf. 
-This branch of their beef product would not be possible without Courtney’s passion, experience, and education in medicine. Full-time, Courtney is a Physician’s Assistant in Orthopedics at DePaul Hospital. 
-Being a middle school teacher and coach provides Matt the schedule to manage the daily activities. </p></div>
-<p>Alongside Matt and Courtney are the hardest working farmhands</p>
-<ul class="farmhand">
-  <li>Hannah (10)</li><li>Molly (8)</li><li>Hayden (5)</li><li>Clayton (3)</li></ul>
-
-
-
 <div class="grid">
+       <div id="header">
+      <h1>M&C GRODIE FARMS</h1>
+      <h2>Dittmer, Missouri</h2></div>
+  
+      <div id="img">
+      <img src="about.jpg" alt="family photo"></div>
+  
+      <div id="intro">
+      <p>Starting with a small herd of Angus cattle in 2012, their farm has grown to a robust head of 300 spanning dozens of paddocks. Fans of 100% Angus meat appreciate the delicacy and tenderness of each juicy bite. Matt and Courtney perfected the product that their waitlist is for cattle yet to be born.
+      Getting trained in artificial insemination, Courtney started breeding their pure Angus heifers with high quality, Japanese Wagyu sperm. The offspring of a portion of their herd produces what is called Wangus beef, marrying the name of combined breeds Wagyu and Angus. In 2019, the farm delivered their first Wangus calf. 
+      This branch of their beef product would not be possible without Courtney’s passion, experience, and education in medicine. Full-time, Courtney is a Physician Assistant in Orthopedics at DePaul Hospital. 
+      Being a middle school teacher and coach provides Matt the schedule to manage the daily activities. <br>Alongside Matt and Courtney are the hardest working farmhands:</p></div>
 
-<div style="width: 100%; min-width: 600px; max-width: 800px;">
-<div style="position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/2C8BXM5T6XM?si=7TwgbroIe5FR_17G" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
-</div></div></div>
-<div class="grid">
-  <div id="beeforder">
-    <table>
-<caption><h2>Beef Availability <br>July 2025 to July 2026</h2></caption>  
+      <div id="farmhand">
+      <ul class="farmhand">
+      <li>Hannah (10)</li><li>Molly (8)</li><li>Hayden (5)</li><li>Clayton (3)</li></ul></div>
+
+    <div id="video">
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/2C8BXM5T6XM?si=7TwgbroIe5FR_17G" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+      <div id="beeforder">
+      <table>
+<caption>Beef Availability <br>July 2025 to July 2026</caption>  
 <tr>
     <th>Beef</th>
     <th>Pork</th>
@@ -235,11 +433,11 @@ Being a middle school teacher and coach provides Matt the schedule to manage the
     <td>Quarter 2</td>
     <td>Quarter 2</td>
     </tr>
-    </table></div></div>
-<div class="grid">
+    </table></div>
 
-<div id="form"><a href="form.pdf">Order Form</a></div></div>
-<div class="quote"><blockquote><p>The farmer has to be an <em>optimist</em> or he <b>wouldn't</b> <em>still</em> be a farmer.   -Will Rogers</p></blockquote></div>
+  <div id="form"><a href="form.pdf">Order Form</a></div>
+
+  <div class="quote"><blockquote><p>The farmer has to be an <em>optimist</em> or he <b>wouldn't</b> <em>still</em> be a farmer.   -Will Rogers</p></blockquote></div></div>
 
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
 </body>

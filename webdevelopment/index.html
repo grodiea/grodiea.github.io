@@ -4,7 +4,7 @@ Use:  Home page for the farm website
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  July 18, 2025; Passed on Firefox and Chrome browsers.-->
+Tested:  July 20, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
                  <meta charset="utf-8">
@@ -38,13 +38,14 @@ img {
     border: solid #39793d;
     border-style:double;
     border-width: 12px;}
+
 .container {
   background-color: #f7f7f7;
   display: flex;
   position: relative;
   max-width: 100%;
-margin-left: 5%;
-margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 5%;
   border: solid;
   padding-top: 20px;
@@ -55,50 +56,49 @@ margin-right: 5%;
 .h3 {margin-top: 30px !important;}
 
 .content {
-    max-width: 100%;
-    padding-top: 20px;
-   padding: 20px;
-   line-height: 1.6;
-   margin-top: 30px;
-   margin-bottom: 30px;
+  max-width: 100%;
+  padding-top: 20px;
+  padding: 20px;
+  line-height: 1.6;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
 
   }
+/*smaller screen sizes
+@media screen and (max-width: 759px)*/
 
-@media (min-width: 600px) {
-    .photo {
-    display: flex;
-    margin-left: 30% !important;}
-  .image {
-    display: flex;
-   margin-left: 30% !important;}}
+
+
+
 </style>
 </head>
-<body>  
- <nav>
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" id="hamburger">&#9776;</label>
+<nav>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" id="hamburger">&#9776;</label>
 
-  <ul class="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="products.html">Products</a>
-      <ul class="mobileHide">
-   <li><a href="products.html#chickentext">Eggs</a></li>
-        <li><a href="products.html#pigtext">Meats</a></li>
-        <li><a href="products.html#beetext">Honey</a></li>
-    </li>
-    <li><a href="reflection.html">Reflection</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-    </nav>
+           <ul class="navMenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+                  <li class="dropdown">
+               <a href="products.html">Products</a>
+                  <ul class="mobileHide">
+                  <li><a href="products.html#chickentext">Eggs</a></li>
+                  <li><a href="products.html#pigtext">Meats</a></li>
+                  <li><a href="products.html#beetext">Honey</a></li>
+            </ul></li>
+                  <li><a href="reflection.html">Reflection</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+            </ul>
+</nav>
+
+
         <h1>M&C GRODIE FARMS</h1>
         <h2>Dittmer, Missouri</h2>
             <img src="homepage.jpg" alt="field of grass">
         
         <p>M&C Grodie Farms is a family run farm in Dittmer, Missouri since 2012.</p><br>
-   
+  
         <p>Growing up blocks a part, in the suburbs of St. Louis County their paths rarely crossed; not until a chance encounter Courtney’ senior year of high school. During the reception of a mutual friend’s wedding, Matt asked Courtney to dance. Five years later they were married, and they scoured the surrounding areas for land to start a farm. Visiting a near perfect property in Dittmer left them with the realty of farm ownership. Spanning over 150 acres, Lone Elm Farm is surrounded by forests, creeks, and a beautiful, white home built with the hands of its dedicated owners. Matt and Courtney could see their future before their eyes. 
         Archiving the success of M&C Grodie Farms will not only benefit communicating their story, but it will also document its journey for their future generations of farmers.</p><br><br><br>
 <footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>

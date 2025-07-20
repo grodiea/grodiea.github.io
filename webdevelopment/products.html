@@ -4,7 +4,7 @@ Use: Informational  page about the farm
 Author:  Amanda Grodie
 School/Term:  University of Missouri Columbia
 Developed: June 15, 2025
-Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
+Tested:  July 20, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
                                <meta charset="utf-8">
@@ -15,23 +15,12 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
               <link rel="stylesheet" href="style.css">
               <link rel="stylesheet" href="navigation.css">
            
-              <link rel="icon" href="images/favicon.ico">
+              <link rel="icon" href="favicon.ico">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 
+<body>
 <style>
-
-
-        /* Image Styling */
-        img {
-            max-width: 100%;
-            height: auto;
-            border: solid #39793d;
-            padding: 12px;
-            border-style:double;
-            border-width: 12px;
-            max-width: 100%;}
-        
 
 /* Grid layout in desktop view*/
   @media screen and (min-width: 760px) {
@@ -39,102 +28,143 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
   * {
     padding: 0%;
     margin: 0%;
+
   }
     .grid {
     display: grid;
-    grid-template-rows: auto auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-        "chickenpic chickentext"
-        "pigtext pigpic"
-        "beepic beetext";}
-    
-    img {
-    border-style: double; color: #397f39;
-    border-width: 12px;
-    padding: 12px;}}
+        "header header header"
+        "chickenpic chickentext chickentext"
+        "pigtext pigtext pigpic"
+        "beepic beetext beetext"
+        "footer footer footer";}
 
+#header {
+  grid-column: 1 / 4;
+  grid-area: header;}
 
 #chickenpic {
-    grid-area: chickenpic;
-    display: block;
-    max-width: 100%;
-    position: relative;
-    margin-left: 5%;
+  grid-area: chickenpic;
+  grid-column: 1 / 2;
   padding-bottom: 50px;}
 
 #chickentext {
     grid-area: chickentext;
-    display: inline-block;
-    position: relative;
+  grid-column: 2 / 4;
     padding-bottom: 50px;}
 
 #pigtext {
     grid-area: pigtext;
-    display: inline-block;
-    position: relative;
+grid-column: 1 / 3;
     padding-bottom: 50px;}
 
 
 #pigpic {
   grid-area: pigpic;
-    margin-left: 5%;
-    display: inline-block;
-    position: relative;
+  grid-column: 3 / 4;
     padding-bottom: 50px;
 }
  
   
 #beepic {
    grid-area: beepic;
-     margin-left: 5%;
-    display: inline-block;
-    position: relative;
+  grid-column: 1 / 2;
     padding-bottom: 50px;}
  
     
 #beetext {
-     grid-area: beetext;
-    display: inline-block;
-    position: relative;
+  grid-area: beetext;
+  grid-column: 2 / 4;
     padding-bottom: 50px;}
 
+#footer {
+  grid-area: footer;
+  grid-column: 1 / 4;
+  width: 100%;
+}
 
+  img {
+            height: auto;
+            border: solid #39793d;
+            padding: 12px;
+            border-style:double;
+            border-width: 12px;
+            max-width: 100%;}}
 
 
       /* Mobile Layout (Stacking for small screens) */
-        @media screen and (max-width: 759px) {
+  @media screen and (max-width: 759px) {
             .grid {
+                display: grid;
                 grid-template-columns: 1fr;
                 grid-template-areas:
+                    "header"
                     "chickenpic"
                     "chickentext"
                     "pigpic"
                     "pigtext"
                     "beepic"
-                    "beetext";
-            }
+                    "beetext"
+                    "footer";}
 
-            /* Align items to center for smaller screens */
-            .grid div {
-                justify-self: center;
-                text-align: center;
-            }
+  #header {
 
-            img {
-                max-width: 80%;
-            }
-
-            .text {
-                width: 100%;
-            }}
+  grid-area: header;
+  margin: auto;}
 
 
+#chickenpic {
+    grid-area: chickenpic;
+  padding-bottom: 50px;
+          margin: auto;}
 
+#chickentext {
+    grid-area: chickentext;
+    padding-bottom: 50px;}
+
+#pigtext {
+    grid-area: pigtext;
+    padding-bottom: 50px;}
+
+
+#pigpic {
+  grid-area: pigpic;
+  padding-bottom: 50px;
+    margin: auto;
+}
+ 
+  
+#beepic {
+   grid-area: beepic;
+  padding-bottom: 50px;
+  margin: auto;
+  justify-self: center;}
+ 
+    
+#beetext {
+     grid-area: beetext;
+    padding-bottom: 50px;}  
+
+ img {
+            margin: auto;
+            height: auto;
+            border: solid #39793d;
+            padding: 12px;
+            border-style:double;
+            border-width: 12px;
+            max-width: 80%;}}
   
 
 
-
 </style>
+</head>
 <main>
   <nav>
   <input type="checkbox" id="menu-toggle">
@@ -156,8 +186,10 @@ Tested:  July 13, 2025; Passed on Firefox and Chrome browsers.-->
   </ul>
 </nav>
 </main>
+<div class="grid">
+    <div id="header">
           <h1>M&C GRODIE FARMS</h1>
-        <h2>Products on the Farm</h2>
+        <h2>Products on the Farm</h2></div> 
         
   <div id="chickenpic">
     <img src="chickenpic.png" alt="chicken eggs" width="400" height="300"></div>
@@ -180,7 +212,7 @@ Not far from the chicken coop, are the hogs. Raising hogs started to feed their 
     <h3>Honey</h3>
 <p>Bees on a farm not only provide honey, but it also helps with pollinating the plants on the farm. Reluctant at first, Matt and Courtney eventually supported their oldest, Hannah’s desire to be a beekeeper. Through support from her 4H and FFA comrades, Hannah now has 4 bee hives that she manages on the farm. Not only is fresh honey delicious, but it can also benefit Hanny’s Honey Hive. Growing up on a farm has encouraged Hannah to become a large animal veterinarian. All money she earns from the beehive goes towards saving for her college education. </p></div>
 
-
-<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer>
+<div id="footer">
+<footer><div class="footerbox"><p> Amanda Grodie               <img class="mail" src="mail.png" alt="mail icon">             Grodiea@umkc.edu       <img class="phone" src="phone.png" alt="phone icon">      1.888.888.8888      &copy; Copyright 2025</p></div></footer></div></div>
 </body>
 </html>
