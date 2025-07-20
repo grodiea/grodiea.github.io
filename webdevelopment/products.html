@@ -7,37 +7,41 @@ Developed: June 15, 2025
 Tested:  July 20, 2025; Passed on Firefox and Chrome browsers.-->
 <html lang="en-US">
 <head>
-                               <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width,initial-scale=1">
-              <title>Products</title>
-              <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width,initial-scale=1">
+                        <title>Products</title>
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
 
-              <link rel="stylesheet" href="style.css">
-              <link rel="stylesheet" href="navigation.css">
-           
-              <link rel="icon" href="favicon.ico">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
-
-<body>
+                        <link rel="stylesheet" href="style.css">
+                        <link rel="stylesheet" href="navigation.css">
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+                        <link rel="icon" href="favicon.ico">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
 
 /* Grid layout in desktop view*/
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 900px) {
 
-  * {
-    padding: 0%;
-    margin: 0%;
 
-  }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;}
+
+  
     .grid {
     display: grid;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-items: center;
-    align-items: center;
     max-width: 100%;
+    gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items:center;
     grid-template-rows: auto;
     grid-template-areas: 
         "header header header"
@@ -53,15 +57,30 @@ Tested:  July 20, 2025; Passed on Firefox and Chrome browsers.-->
 #chickenpic {
   grid-area: chickenpic;
   grid-column: 1 / 2;
-  padding-bottom: 50px;}
+  padding-bottom: 50px;
+justify-content: center}
 
 #chickentext {
     grid-area: chickentext;
   grid-column: 2 / 4;
     padding-bottom: 50px;}
+ 
+  
+#beepic {
+   grid-area: beepic;
+  grid-column: 1 / 2;
+    padding-bottom: 50px;
+  justify-content: center;}
+
+    
+#beetext {
+  grid-area: beetext;
+  grid-column: 2 / 4;
+    padding-bottom: 50px;}
+
 
 #pigtext {
-    grid-area: pigtext;
+  grid-area: pigtext;
 grid-column: 1 / 3;
     padding-bottom: 50px;}
 
@@ -70,19 +89,8 @@ grid-column: 1 / 3;
   grid-area: pigpic;
   grid-column: 3 / 4;
     padding-bottom: 50px;
+    justify-content: center;
 }
- 
-  
-#beepic {
-   grid-area: beepic;
-  grid-column: 1 / 2;
-    padding-bottom: 50px;}
- 
-    
-#beetext {
-  grid-area: beetext;
-  grid-column: 2 / 4;
-    padding-bottom: 50px;}
 
 #footer {
   grid-area: footer;
@@ -99,10 +107,12 @@ grid-column: 1 / 3;
             max-width: 100%;}}
 
 
-      /* Mobile Layout (Stacking for small screens) */
-  @media screen and (max-width: 759px) {
+      /* Mobile Layout (Stacking for small screens) --------------------------------------------------------------------------*/
+  @media screen and (max-width: 899px) {
             .grid {
                 display: grid;
+                 padding-left: 10px;
+                padding-right: 10px;
                 grid-template-columns: 1fr;
                 grid-template-areas:
                     "header"
@@ -122,6 +132,7 @@ grid-column: 1 / 3;
 
 #chickenpic {
     grid-area: chickenpic;
+    justify-self: center;
   padding-bottom: 50px;
           margin: auto;}
 
@@ -136,6 +147,7 @@ grid-column: 1 / 3;
 
 #pigpic {
   grid-area: pigpic;
+  justify-self: center;
   padding-bottom: 50px;
     margin: auto;
 }
@@ -144,8 +156,8 @@ grid-column: 1 / 3;
 #beepic {
    grid-area: beepic;
   padding-bottom: 50px;
-  margin: auto;
-  justify-self: center;}
+  justify-self: center;
+  margin: auto;}
  
     
 #beetext {
@@ -159,13 +171,13 @@ grid-column: 1 / 3;
             padding: 12px;
             border-style:double;
             border-width: 12px;
-            max-width: 80%;}}
+            max-width: 90%;}}
   
 
 
 </style>
 </head>
-<main>
+<body>
   <nav>
   <input type="checkbox" id="menu-toggle">
   <label for="menu-toggle" id="hamburger">&#9776;</label>
@@ -185,7 +197,6 @@ grid-column: 1 / 3;
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-</main>
 <div class="grid">
     <div id="header">
           <h1>M&C GRODIE FARMS</h1>

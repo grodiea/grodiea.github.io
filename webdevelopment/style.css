@@ -19,16 +19,25 @@ src: url(RubikDirt-Regular.ttf)}
 font-family: "Chunk Five";
 src: url(Chunk\ Five\ Print.ttf)}
 
+@font-face {
+font-family: "Roboto Flex", sans-serif;
+src: url(RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf)
+}
+
 p {
     font-size: 140%;
     color:#150f61;
-    text-align:justify;
-    font-family: "Yusei Magic";
+    line-height: 1.6;
+    font-family: "Roboto Flex", sans-serif;
     margin-right:5%;
     margin-left: 5%;
     border-style:none;
     text-decoration: none;
-    padding: 0%;}
+    padding: 0%;
+    text-align: justify;
+    hyphens:none;
+    word-spacing: normal;
+    letter-spacing: normal;}
 
 
 h1 {
@@ -106,13 +115,15 @@ h3 {color: #e1a730;
 p {
     font-size: 145%;
     color:#150f61;
-    font-family: "Yusei Magic";
+    font-family: "Roboto Flex", sans-serif;
     margin-right:5%;
     margin-left: 5%;
     border-style:none;
     line-height: 1.5;
     text-decoration: none;
-    padding: 0%;}
+    padding: 0%;
+    word-spacing: normal;
+    letter-spacing: normal;}
 
 
 h1 {
@@ -138,4 +149,13 @@ h3 {color: #e1a730;
     font-size: 205%;
     font-family: "Covered By Your Grace";
     padding: auto;
-    margin: auto;    }}
+    margin: auto;}
+
+
+.footerbox {
+    font-size: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0%;
+    height: 75px;}
+}

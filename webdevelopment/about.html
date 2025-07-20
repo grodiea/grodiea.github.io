@@ -14,23 +14,39 @@ Tested:  July 20, 2025 assed on Firefox and Chrome browsers.-->
 
                         <link rel="stylesheet" href="style.css">
                         <link rel="stylesheet" href="navigation.css">
-           
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
                         <link rel="icon" href="favicon.ico">
                         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Yusei+Magic&display=swap">
                         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap">
 <style>
 
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
 /* Grid layout in desktop view*/
-  @media screen and (min-width: 760px) {
+@media screen and (min-width: 900px) {
+
+
 
  .grid {
           display: grid;
           gap: 15px;
+          padding: 15px;
+          max-width: 100%;
+            justify-content: space-evenly;
+          justify-items: center;
+           align-items:center;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: auto;
           grid-template-areas:
           "header header"
-          "img img"
+          "photo photo"
           "intro intro" 
           "farmhand farmhand" 
           "video beeforder"
@@ -38,16 +54,25 @@ Tested:  July 20, 2025 assed on Firefox and Chrome browsers.-->
           "footer footer";}
 
 #header {
-  grid: column start 1;
-  grid: column end 2;
+  grid-column: 1 / 3;
   grid-area: header;
   margin: auto;}
 
-#img {
-  grid: column start 1;
-  grid: column end 2;
-  grid-area: img;
+#photo {
+  grid-area: photo;
+  grid-column: 1 / 3;
   display: block;
+  align-content: center;
+  margin: auto;
+  margin-bottom: 10%;
+}
+#photo img {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+  margin: auto;
+
+  grid-area: photo;
   padding: 12px;
   align-content: center;
   margin-right: auto;
@@ -58,53 +83,64 @@ Tested:  July 20, 2025 assed on Firefox and Chrome browsers.-->
 
 #intro {
   grid-area: intro;
-    grid: column start 1;
-  grid: column end 2;
+  grid-column: 1 / 3;
+  margin-top: 10%;
   margin-bottom: 0% !important;
   padding-bottom: 0% !important;
   line-height: 1.6;}
 
 #farmhand {
   grid-area: farmhand;
-  grid: column start 1;
-  grid: column end 2;
+  grid-column: 1 / 3;
   font-family: "Covered By Your Grace", cursive; font-size: 220%;
   text-align: center;
   color:#150f61;
-  padding-top: 0%;
-  margin-top: 0%;
-padding-bottom: 40px;
-margin-bottom: auto;}
+  padding-top: 0% !important;
+  margin-top: 0% !important;
+  padding-bottom: 40px;
+  margin-bottom: auto;
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;}
 
+#farmhand li {
+  display: inline;
+  padding-right: 25px;
+}
 
+#video {
+  grid-area: video;
+  align-self: start;
+  place-self: center stretch;
+}
 .video-wrapper {
-  grid: column start 1;
-  grid: column end 1;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   overflow: hidden;
-  margin: auto;
+  width:100%;
 }
 
 .video-wrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 
 #beeforder {
   grid-area: beeforder;
-  grid-column: 2;
-  color: #150f61;
-  empty-cells: hide;
-justify-self: center;}
+  color: #150f61;}
+  
 
-  #beeforder table {
+#beeforder table {
   border-collapse: collapse;
+  max-width: 100%;
+  overflow-x: auto;
+  place-self: center stretch;}
 }
 
 #beeforder td, #beeforder th {
@@ -125,8 +161,8 @@ justify-self: center;}
   color: #150f61;
 }
 #beeforder { /*here is where changes need to be made*/
-  font-family: "Yusei Magic";  
-  font-size: 120%;}
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 115%;}
 #beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
@@ -139,14 +175,14 @@ justify-self: center;}
 
 .quote {
   grid-area: quote;
-  grid-column: 1;
-  margin: 5%
+   grid-column: 1 / 2;
 }
 
 #form {
     grid-area: form;
-    grid-column: 2;
+    grid-column: 2 / 3;
     font-size: 160%;
+    max-width: 60%;
     margin: auto;
     border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
     text-decoration: none; 
@@ -157,33 +193,23 @@ justify-self: center;}
 
   .footerbox {
   grid-area: footer;
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   max-width: 100%;}
 
-.farmhand {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;}
 
-.farmhand li {
-  display: inline;
-  padding-right: 25px;
-}}
-
-
-/*smaller screen sizes*/
-@media screen and (max-width: 759px) {
-
-  @media (max-width: 768px) {
+/*smaller screen sizes               _________________________________________________________________________      */
+@media screen and (max-width: 899px) {
         .grid {
           display: grid;
-          padding-left: 10px;
-          padding-right: 10px;
+            max-width: 100%;
+            justify-content: space-evenly;
+          justify-items: center;
+           align-items:center;
           grid-template-columns: 1fr;
           grid-template-rows: auto;
           grid-template-areas:
           "header" 
-          "img"
+          "photo"
           "intro" 
           "farmhand" 
           "video" 
@@ -191,7 +217,6 @@ justify-self: center;}
           "form"
           "quote"
           "footer";}
-        }
   
 
 #header {
@@ -205,34 +230,29 @@ justify-self: center;}
   justify-self: center;
   margin: auto;}
 
- #img img {
-  grid-area: img;
+#photo {
+  grid-area: photo;
   display: block;
+}
+
+#photo img {
+  max-width: 80%;
+  grid-area: photo;
   padding: 12px;
   align-content: center;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 10%;
   border: solid #39793d;
   border-style:double;
-  border-width: 12px;
-  height: auto;
-  display: block;
-  max-width: 70%;
-  justify-self: center;}
+  border-width: 12px;}
 
-#farmhand {
-  grid-area: farmhand;
-  font-family: "Covered By Your Grace", cursive; font-size: 220%;
-  text-align: center;
-  color:#150f61;
-  padding-top: 0%;
-  margin-top: 0%;
-  padding-bottom: 40px;
-  margin-bottom: auto;}
-
-
+  #video {
+  grid-area: video;
+  place-self: center stretch;
+}
 .video-wrapper {
   position: relative;
+   justify-self: center;
   padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
@@ -241,29 +261,33 @@ justify-self: center;}
 
 .video-wrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  width: 80%;
+  height: 80%;
 }
 
 
 #beeforder {
   grid-area: beeforder;
   color: #150f61;
-  empty-cells: hide;
-justify-self: center;}
+  empty-cells: omit;
+  margin: auto;}
 
-  #beeforder table {
+#beeforder table {
+  grid-area: beeforder;
   border-collapse: collapse;    
-  margin-top: 50px;
+  max-width: 100%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 #beeforder td, #beeforder th {
   border: 3px solid #150f61;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 20x;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -277,14 +301,14 @@ justify-self: center;}
   color: #150f61;
 }
 #beeforder { 
-  font-family: "Yusei Magic";  
-  font-size: 1.1rem}
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 100%;}
 #beeforder th {
   text-align: center;  color: #150f61;
   background-color: #e1a730;}
 
   caption {
-  font-size: 200% !important;
+  font-size: 235% !important;
   color: #39793d;
   font-family: "Covered By Your Grace" !important;
   text-align: center;}
@@ -293,37 +317,49 @@ justify-self: center;}
   grid-area: quote;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #form {
     grid-area: form;
     font-size: 160%;
+    max-width: 60%;
     margin-top: 50px;
     margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     border: solid; border-style:double; border-width: 12px; border-color: #e1a730;
     text-decoration: none; 
     color:#150f61;
     justify-content: center;
     text-align: center;
-    justify-self: center;}
+    justify-self: center;
+    margin-bottom: 50px;}
 
   .footerbox {
   grid-area: footer;
-
   max-width: 100%;}
 
-.farmhand {
+#farmhand {
+  grid-area: farmhand;
+  font-family: "Covered By Your Grace", cursive; font-size: 210%;
+  text-align: center;
+  color:#150f61;
+  padding-top: 0%;
+  margin-top: 0%;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
   list-style-type: none;
   margin: 0;
   padding: 0;}
 
-.farmhand li {
+#farmhand li {
   display: inline;
   align-content: space-between;
   padding-right: 25px;
-}
-}
+  margin-bottom: 50px;
+}}
 
 
 
@@ -385,17 +421,17 @@ justify-self: center;}
       <h1>M&C GRODIE FARMS</h1>
       <h2>Dittmer, Missouri</h2></div>
   
-      <div id="img">
+      <div id="photo">
       <img src="about.jpg" alt="family photo"></div>
   
       <div id="intro">
       <p>Starting with a small herd of Angus cattle in 2012, their farm has grown to a robust head of 300 spanning dozens of paddocks. Fans of 100% Angus meat appreciate the delicacy and tenderness of each juicy bite. Matt and Courtney perfected the product that their waitlist is for cattle yet to be born.
       Getting trained in artificial insemination, Courtney started breeding their pure Angus heifers with high quality, Japanese Wagyu sperm. The offspring of a portion of their herd produces what is called Wangus beef, marrying the name of combined breeds Wagyu and Angus. In 2019, the farm delivered their first Wangus calf. 
       This branch of their beef product would not be possible without Courtney’s passion, experience, and education in medicine. Full-time, Courtney is a Physician Assistant in Orthopedics at DePaul Hospital. 
-      Being a middle school teacher and coach provides Matt the schedule to manage the daily activities. <br>Alongside Matt and Courtney are the hardest working farmhands:</p></div>
+      Being a middle school teacher and coach provides Matt the schedule to manage the daily activities. <br><br>Alongside Matt and Courtney are the hardest working farmhands:</p></div>
 
       <div id="farmhand">
-      <ul class="farmhand">
+      <ul>
       <li>Hannah (10)</li><li>Molly (8)</li><li>Hayden (5)</li><li>Clayton (3)</li></ul></div>
 
     <div id="video">
@@ -403,8 +439,6 @@ justify-self: center;}
     <iframe src="https://www.youtube.com/embed/2C8BXM5T6XM?si=7TwgbroIe5FR_17G" allowfullscreen></iframe>
   </div>
 </div>
-
-
       <div id="beeforder">
       <table>
 <caption>Beef Availability <br>July 2025 to July 2026</caption>  
