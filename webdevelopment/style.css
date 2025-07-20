@@ -20,15 +20,15 @@ font-family: "Chunk Five";
 src: url(Chunk\ Five\ Print.ttf)}
 
 @font-face {
-font-family: "Roboto Flex", sans-serif;
-src: url(RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf)}
+font-family: "Roboto", sans-serif;
+src: url(Roboto-VariableFont_wdth\,wght.ttf)}
 
 
 p {
     font-size: 140%;
     color:#150f61;
     line-height: 1.6;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-right:5%;
     margin-left: 5%;
     border-style:none;
@@ -114,7 +114,7 @@ h3 {color: #e1a730;
 p {
     font-size: 145%;
     color:#150f61;
-    font-family: "Roboto Flex", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-right:5%;
     margin-left: 5%;
     border-style:none;
