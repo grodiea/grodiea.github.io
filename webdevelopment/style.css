@@ -21,7 +21,7 @@ src: url(Chunk\ Five\ Print.ttf)}
 
 @font-face {
 font-family: "Roboto Flex", sans-serif;
-src: url(RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf)
+src: url(RobotoFlex.ttf)
 }
 
 p {
@@ -62,7 +62,6 @@ h3 {color: #e1a730;
     font-size: 250%;
     font-family: "Covered By Your Grace";
     text-align: center;
-    padding: auto;
     margin: 0 auto;
     margin-right: 5%;}
 
@@ -148,7 +147,6 @@ h3 {color: #e1a730;
     text-align: center;
     font-size: 205%;
     font-family: "Covered By Your Grace";
-    padding: auto;
     margin: auto;}
 
 
