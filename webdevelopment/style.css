@@ -109,7 +109,7 @@ h3 {color: #e1a730;
 
 
 /*smaller screen sizes*/
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 900px) {
    
 p {
     font-size: 145%;
