@@ -13,8 +13,9 @@ nav {
 
     #hamburger {
       display: none;
-      font-size: 140%;
+      font-size: 220%;
       color: #150f61;
+      background-color: #e1a730;
       cursor: pointer;
     }
 
