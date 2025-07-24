@@ -74,6 +74,14 @@ h4 {
 
 }
 
+h5 {color: #150f61;
+    text-align: auto !important;
+    text-indent: 1.5em;
+    margin-bottom: 0% !important;
+    font-size: 215% !important;
+    font-family: "Covered By Your Grace" !important;}
+
+
 .footerbox {color: #150f61;
     background-color: #e1a730;
     padding-top: 5px;
@@ -157,6 +165,14 @@ h3 {color: #e1a730;
     font-size: 205%;
     font-family: "Covered By Your Grace";
     margin: auto;}
+
+h5 {color: #150f61;
+    text-align: center !important;
+    margin: auto;
+    text-indent: 0;
+    margin-bottom: 0% !important;
+    font-size: 210% !important;
+    font-family: "Covered By Your Grace" !important;}
 
 
 .footerbox {
